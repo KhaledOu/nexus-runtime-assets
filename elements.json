@@ -1,0 +1,3693 @@
+{
+  "version": "1.0.0",
+  "source": "قاموس العناصر.txt",
+  "count": 307,
+  "elements": [
+    {
+      "id": "e001",
+      "number": 1,
+      "name": "حقول القرية (dorf1)",
+      "css": [
+        "#_n1"
+      ],
+      "xpath": [
+        "//a[@id='_n1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e002",
+      "number": 2,
+      "name": "مباني القرية (dorf2)",
+      "css": [
+        "#n2"
+      ],
+      "xpath": [
+        "//a[@id='n2']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e003",
+      "number": 3,
+      "name": "خريطة (karte)",
+      "css": [
+        "#n3"
+      ],
+      "xpath": [
+        "//a[@id='n3']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e004",
+      "number": 4,
+      "name": "الإحصائيات (statistiken)",
+      "css": [
+        "#n4"
+      ],
+      "xpath": [
+        "//a[@id='n4']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e005",
+      "number": 5,
+      "name": "الرسائل (msg)",
+      "css": [
+        "#n5 a.reports"
+      ],
+      "xpath": [
+        "//div[@id='n5']//a[contains(@class,'reports')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e006",
+      "number": 6,
+      "name": "التقارير (berichte)",
+      "css": [
+        "#n5 a.messages"
+      ],
+      "xpath": [
+        "//div[@id='n5']//a[contains(@class,'messages')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e007",
+      "number": 7,
+      "name": "البطل (kahraman)",
+      "css": [
+        "#nh"
+      ],
+      "xpath": [
+        "//a[@id='nh']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e008",
+      "number": 8,
+      "name": "المزادات",
+      "css": [
+        "a.heroBtn[href*='t=5']"
+      ],
+      "xpath": [
+        "//a[contains(@href,'kahraman?t=5')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e009",
+      "number": 9,
+      "name": "المغامرات",
+      "css": [
+        "a.heroBtn[href*='t=3']"
+      ],
+      "xpath": [
+        "//a[contains(@href,'kahraman?t=3')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e010",
+      "number": 10,
+      "name": "الذهب / البلس",
+      "css": [
+        "a.Plus.Gold"
+      ],
+      "xpath": [
+        "//a[contains(@class,'Plus') and contains(@class,'Gold')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e012",
+      "number": 12,
+      "name": "اسم القرية الحالي في العنوان",
+      "css": [
+        "#content h1 .Vn"
+      ],
+      "xpath": [
+        "//div[@id='content']//h1//span[contains(@class,'Vn')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e013",
+      "number": 13,
+      "name": "زر التبديل للقرية التالية من العنوان",
+      "css": [
+        "#content h1 a.switchVillage"
+      ],
+      "xpath": [
+        "//div[@id='content']//h1//a[contains(@class,'switchVillage')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e014",
+      "number": 14,
+      "name": "حقول الموارد في الخريطة (حسب رقم الحقل 1 إلى 18)",
+      "css": [
+        "#rx area.bulid1      (استبدل 1 برقم الحقل من 1 إلى 18)"
+      ],
+      "xpath": [
+        "//map[@id='rx']//area[@class='bulid1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e015",
+      "number": 15,
+      "name": "أي حقل مورد حسب النوع أو المستوى (مثال: حقل قمح / مستوى أقل من 22)",
+      "css": [
+        "#rx area[title*='حقل القمح']"
+      ],
+      "xpath": [
+        "//map[@id='rx']//area[contains(@title,'حقل القمح')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e016",
+      "number": 16,
+      "name": "مركز القرية من خريطة الحقول (ينقل إلى dorf2)",
+      "css": [
+        "#rx area[href='dorf2']"
+      ],
+      "xpath": [
+        "//map[@id='rx']//area[@href='dorf2']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e017",
+      "number": 17,
+      "name": "جدول التحركات",
+      "css": [
+        "#movements"
+      ],
+      "xpath": [
+        "//table[@id='movements']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e018",
+      "number": 18,
+      "name": "صفوف التحركات داخل الجدول",
+      "css": [
+        "#movements tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='movements']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e019",
+      "number": 19,
+      "name": "جدول الإنتاج",
+      "css": [
+        "#production"
+      ],
+      "xpath": [
+        "//table[@id='production']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e020",
+      "number": 20,
+      "name": "صفوف الإنتاج (الخشب، الطين، الحديد، القمح، الاستهلاك، الحضارة)",
+      "css": [
+        "#production tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='production']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e021",
+      "number": 21,
+      "name": "جدول القوات",
+      "css": [
+        "#troops"
+      ],
+      "xpath": [
+        "//table[@id='troops']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e022",
+      "number": 22,
+      "name": "صفوف القوات داخل الجدول",
+      "css": [
+        "#troops tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='troops']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e023",
+      "number": 23,
+      "name": "زر طي / إظهار قائمة القرى",
+      "css": [
+        "#vlist button.vlTg"
+      ],
+      "xpath": [
+        "//table[@id='vlist']//button[contains(@class,'vlTg')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e024",
+      "number": 24,
+      "name": "عدد القرى الإجمالي في القائمة",
+      "css": [
+        "#vlist .vlN"
+      ],
+      "xpath": [
+        "//table[@id='vlist']//*[contains(@class,'vlN')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e025",
+      "number": 25,
+      "name": "جدول قائمة القرى الجانبية",
+      "css": [
+        "#vlist"
+      ],
+      "xpath": [
+        "//table[@id='vlist']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e026",
+      "number": 26,
+      "name": "صفوف القرى في قائمة القرى",
+      "css": [
+        "#vlist tbody tr[data-v]"
+      ],
+      "xpath": [
+        "//table[@id='vlist']//tbody//tr[@data-v]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e027",
+      "number": 27,
+      "name": "رابط الدخول على قرية محددة في القائمة (أو :last-child لآخر قرية)",
+      "css": [
+        "#vlist tbody tr td.link a"
+      ],
+      "xpath": [
+        "//table[@id='vlist']//tbody//tr//td[contains(@class,'link')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e028",
+      "number": 28,
+      "name": "إحداثيات كل قرية في قائمة القرى",
+      "css": [
+        "#vlist tbody tr td.aligned_coords"
+      ],
+      "xpath": [
+        "//table[@id='vlist']//tbody//tr//td[contains(@class,'aligned_coords')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e029",
+      "number": 29,
+      "name": "أيقونة الهجوم السريع بجانب كل قرية في القائمة",
+      "css": [
+        "#vlist tbody tr td a[href^='a2b?id=']"
+      ],
+      "xpath": [
+        "//table[@id='vlist']//tbody//tr//td//a[starts-with(@href,'a2b?id=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e030",
+      "number": 30,
+      "name": "زر ركب قطع الخريطة واربح الذهب العائم",
+      "css": [
+        "#mpzB"
+      ],
+      "xpath": [
+        "//div[@id='mpzB']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e032",
+      "number": 32,
+      "name": "مواقع البناء الفارغة في خريطة المباني",
+      "css": [
+        "#village_map img.building.iso[alt='موقع البناء']"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'iso')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e033",
+      "number": 33,
+      "name": "مبنى السكن / الثكن في خريطة المباني (g25)",
+      "css": [
+        "#village_map img.building.g25"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g25')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e034",
+      "number": 34,
+      "name": "البلدية في خريطة المباني (g24)",
+      "css": [
+        "#village_map img.building.g24"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g24')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e035",
+      "number": 35,
+      "name": "المبنى الرئيسي في خريطة المباني (g15)",
+      "css": [
+        "#village_map img.building.g15"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g15')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e036",
+      "number": 36,
+      "name": "السوق في خريطة المباني (g17)",
+      "css": [
+        "#village_map img.building.g17"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g17')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e037",
+      "number": 37,
+      "name": "المخزن في خريطة المباني (g10)",
+      "css": [
+        "#village_map img.building.g10"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g10')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e038",
+      "number": 38,
+      "name": "الصومعة في خريطة المباني (g11)",
+      "css": [
+        "#village_map img.building.g11"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g11')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e039",
+      "number": 39,
+      "name": "المطاحن في خريطة المباني (g8)",
+      "css": [
+        "#village_map img.building.g8"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g8')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e040",
+      "number": 40,
+      "name": "المخابز في خريطة المباني (g9)",
+      "css": [
+        "#village_map img.building.g9"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g9')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e041",
+      "number": 41,
+      "name": "الساحة في خريطة المباني (g14)",
+      "css": [
+        "#village_map img.building.g14"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g14')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e042",
+      "number": 42,
+      "name": "المكتب التجاري في خريطة المباني (g28)",
+      "css": [
+        "#village_map img.building.g28"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g28')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e043",
+      "number": 43,
+      "name": "نقطة التجمع في خريطة المباني (g16)",
+      "css": [
+        "#village_map img.dx1.g16"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'g16')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e044",
+      "number": 44,
+      "name": "مستوى مبنى معين من شارة المستوى (مثال للسكن d15)",
+      "css": [
+        "#village_map #levels b.d15.lv"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//div[@id='levels']//b[contains(@class,'d15') and contains(@class,'lv')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e045",
+      "number": 45,
+      "name": "قائمة المواقع الفارغة الموصى بها في data-emp",
+      "css": [
+        "#village_map[data-emp]"
+      ],
+      "xpath": [
+        "//div[@id='village_map' and @data-emp]"
+      ],
+      "notes": [
+        "ملاحظة: يمكن قراءة أرقام المواقع عبر el.getAttribute('data-emp')"
+      ]
+    },
+    {
+      "id": "e046",
+      "number": 46,
+      "name": "شريط الموارد العلوي بالكامل",
+      "css": [
+        "#res"
+      ],
+      "xpath": [
+        "//div[@id='res']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e047",
+      "number": 47,
+      "name": "خانة مورد الخشب (الكمية الحالية داخل الـ b)",
+      "css": [
+        "#res tr.res td.res:nth-child(1) b"
+      ],
+      "xpath": [
+        "//div[@id='res']//tr[contains(@class,'res')]//td[1]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e048",
+      "number": 48,
+      "name": "خانة مورد الطين (الكمية الحالية داخل الـ b)",
+      "css": [
+        "#res tr.res td.res:nth-child(2) b"
+      ],
+      "xpath": [
+        "//div[@id='res']//tr[contains(@class,'res')]//td[2]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e049",
+      "number": 49,
+      "name": "خانة مورد الحديد (الكمية الحالية داخل الـ b)",
+      "css": [
+        "#res tr.res td.res:nth-child(3) b"
+      ],
+      "xpath": [
+        "//div[@id='res']//tr[contains(@class,'res')]//td[3]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e050",
+      "number": 50,
+      "name": "خانة مورد القمح (الكمية الحالية داخل الـ b)",
+      "css": [
+        "#res tr.res td.res:nth-child(4) b"
+      ],
+      "xpath": [
+        "//div[@id='res']//tr[contains(@class,'res')]//td[4]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e051",
+      "number": 51,
+      "name": "أيقونات الموارد داخل الشريط (r1 خشب، r2 طين، r3 حديد، r4 قمح)",
+      "css": [
+        "#res img.r1"
+      ],
+      "xpath": [
+        "//div[@id='res']//img[contains(@class,'r1')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e052",
+      "number": 52,
+      "name": "حاوية مبنى البلدية",
+      "css": [
+        "#build.gid24"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e053",
+      "number": 53,
+      "name": "مستوى البلدية الحالي من العنوان",
+      "css": [
+        "#build.gid24 h1.GreenWord .level"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e054",
+      "number": 54,
+      "name": "أزرار التبديل بين القرى داخل البلدية (السابق « / التالي »)",
+      "css": [
+        "#build.gid24 h1.GreenWord a.switchVillage"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//h1//a[contains(@class,'switchVillage')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e055",
+      "number": 55,
+      "name": "نقاط الحضارة المنتجة حالياً في البلدية",
+      "css": [
+        "#build.gid24 b[speed]"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//b[@speed]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e056",
+      "number": 56,
+      "name": "جدول الحفلات داخل البلدية",
+      "css": [
+        "#build.gid24 table.build_details"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e057",
+      "number": 57,
+      "name": "صفوف الحفلات داخل الجدول (1 صغير، 2 كبير، 3 ضخم، 4 بكل القرى بالذهب)",
+      "css": [
+        "#build.gid24 table.build_details tbody tr"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e058",
+      "number": 58,
+      "name": "زر إحتفال صغير (a=1)",
+      "css": [
+        "#build.gid24 table.build_details tbody tr:nth-child(1) td.act a"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr[1]//td[contains(@class,'act')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e059",
+      "number": 59,
+      "name": "زر إحتفال كبير (a=2)",
+      "css": [
+        "#build.gid24 table.build_details tbody tr:nth-child(2) td.act a"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr[2]//td[contains(@class,'act')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e060",
+      "number": 60,
+      "name": "زر إحتفال ضخم (a=3)",
+      "css": [
+        "#build.gid24 table.build_details tbody tr:nth-child(3) td.act a"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr[3]//td[contains(@class,'act')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e061",
+      "number": 61,
+      "name": "مربع اختيار \"تكرار الاحتفالات بالذهب\"",
+      "css": [
+        "#build.gid24 #autoCheckbox"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//input[@id='autoCheckbox']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e062",
+      "number": 62,
+      "name": "زر بدء \"إحتفال بكل القرى\" بالذهب",
+      "css": [
+        "#build.gid24 table.build_details a.build.Auto"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//a[contains(@class,'build') and contains(@class,'Auto')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e063",
+      "number": 63,
+      "name": "رسالة اكتمال ترقية المبنى (\"المبنى حُدِّث بالكامل\")",
+      "css": [
+        "#build.gid24 p.none"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid24')]//p[contains(@class,'none')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e064",
+      "number": 64,
+      "name": "حاوية مبنى السكن / الثكن",
+      "css": [
+        "#build.gid25"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e065",
+      "number": 65,
+      "name": "مستوى السكن / الثكن الحالي من العنوان",
+      "css": [
+        "#build.gid25 h1.GreenWord .level"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e066",
+      "number": 66,
+      "name": "أزرار التبديل بين القرى داخل السكن (السابق « / التالي »)",
+      "css": [
+        "#build.gid25 h1.GreenWord a.switchVillage"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//h1//a[contains(@class,'switchVillage')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e067",
+      "number": 67,
+      "name": "تبويب \"التدريب\" داخل السكن",
+      "css": [
+        "#build.gid25 #textmenu a[href*='t='] , #build.gid25 #textmenu a:first-child"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//div[@id='textmenu']//a[contains(text(),'التدريب')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e068",
+      "number": 68,
+      "name": "تبويب \"الولاء\" داخل السكن",
+      "css": [
+        "#build.gid25 #textmenu a[href*='t=1']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//div[@id='textmenu']//a[contains(@href,'t=1')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e069",
+      "number": 69,
+      "name": "رسالة جاهزية المستوطنين للتوسع (\"لديك X ... يمكنك التوسع\")",
+      "css": [
+        "#build.gid25 div.c img.unit.u20"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//div[contains(@class,'c') and contains(.,'يمكنك التوسع')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e070",
+      "number": 70,
+      "name": "نقاط الحضارة المنتجة والمطلوبة للتوسع داخل السكن",
+      "css": [
+        "#build.gid25 p[style*='text-align:center'] b"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//p[contains(.,'للتوسع يتطلب منك')]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e071",
+      "number": 71,
+      "name": "جدول التوسع (القرى المؤسسة / المحتلة من السكن)",
+      "css": [
+        "#build.gid25 table#expansion"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//table[@id='expansion']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e072",
+      "number": 72,
+      "name": "صفوف جدول التوسع",
+      "css": [
+        "#build.gid25 table#expansion tbody tr"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//table[@id='expansion']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e073",
+      "number": 73,
+      "name": "جدول سرعة رفع الولاء",
+      "css": [
+        "#build.gid25 table#build_value"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//table[@id='build_value']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e074",
+      "number": 74,
+      "name": "زر الارتقاء بمستوى السكن داخل العقد",
+      "css": [
+        "#build.gid25 #contract a.build[quick='1']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//p[@id='contract']//a[contains(@class,'build')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e075",
+      "number": 75,
+      "name": "بطاقة تدريب المستوطن (tid=20)",
+      "css": [
+        "#build.gid25 .trainCard[data-tid='20']"
+      ],
+      "xpath": [
+        "//div[@id='build']//div[contains(@class,'trainCard') and @data-tid='20']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e076",
+      "number": 76,
+      "name": "عدد المستوطنين المتوفرين حالياً في القرية",
+      "css": [
+        "#build.gid25 .trainCard[data-tid='20'] .furtherInfo b"
+      ],
+      "xpath": [
+        "//div[@id='build']//div[@data-tid='20']//*[contains(@class,'furtherInfo')]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e077",
+      "number": 77,
+      "name": "أيقونة تاجر المبادلة (NPC) لتدريب المستوطنين",
+      "css": [
+        "#build.gid25 .trainCard[data-tid='20'] img.npc"
+      ],
+      "xpath": [
+        "//div[@id='build']//div[@data-tid='20']//img[contains(@class,'npc')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e078",
+      "number": 78,
+      "name": "حقل إدخال كمية المستوطنين المطلوب تدريبهم",
+      "css": [
+        "#build.gid25 #_tf20"
+      ],
+      "xpath": [
+        "//div[@id='build']//input[@id='_tf20']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e079",
+      "number": 79,
+      "name": "رابط تحديد أقصى عدد مستوطنين ممكن (مثل رابط الـ \"3\" بجانب / )",
+      "css": [
+        "#build.gid25 a[data-set^='_tf20:']"
+      ],
+      "xpath": [
+        "//div[@id='build']//a[starts-with(@data-set,'_tf20:')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e080",
+      "number": 80,
+      "name": "زر بدء تدريب المستوطنين",
+      "css": [
+        "#build.gid25 button.trainCardBtn[data-tid='20']"
+      ],
+      "xpath": [
+        "//div[@id='build']//button[contains(@class,'trainCardBtn') and @data-tid='20']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e081",
+      "number": 81,
+      "name": "زر بدء تدريب المستوطنين (المفعل فقط وغير المعطل)",
+      "css": [
+        "#build.gid25 button.trainCardBtn[data-tid='20']:not([disabled])"
+      ],
+      "xpath": [
+        "//div[@id='build']//button[contains(@class,'trainCardBtn') and @data-tid='20' and not(@disabled)]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e082",
+      "number": 82,
+      "name": "نافذة البناء السريع الجديدة بالكامل",
+      "css": [
+        "#qs.qsNew"
+      ],
+      "xpath": [
+        "//div[@id='qs' and contains(@class,'qsNew')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e083",
+      "number": 83,
+      "name": "زر إغلاق نافذة البناء السريع (×)",
+      "css": [
+        "#qs button.qsX"
+      ],
+      "xpath": [
+        "//div[@id='qs']//button[contains(@class,'qsX')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e084",
+      "number": 84,
+      "name": "تبويب \"البنية التحتية\" (infra)",
+      "css": [
+        "#qs .qsTabs button.qsTab[data-tab='infra']"
+      ],
+      "xpath": [
+        "//div[@id='qs']//button[contains(@class,'qsTab') and @data-tab='infra']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e085",
+      "number": 85,
+      "name": "تبويب \"العسكرية\" (mil)",
+      "css": [
+        "#qs .qsTabs button.qsTab[data-tab='mil']"
+      ],
+      "xpath": [
+        "//div[@id='qs']//button[contains(@class,'qsTab') and @data-tab='mil']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e086",
+      "number": 86,
+      "name": "تبويب \"الموارد\" (eco)",
+      "css": [
+        "#qs .qsTabs button.qsTab[data-tab='eco']"
+      ],
+      "xpath": [
+        "//div[@id='qs']//button[contains(@class,'qsTab') and @data-tab='eco']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e087",
+      "number": 87,
+      "name": "جميع بطاقات المباني المتاحة في النافذة",
+      "css": [
+        "#qs .qsRow button.qsCard"
+      ],
+      "xpath": [
+        "//div[@id='qs']//div[contains(@class,'qsRow')]//button[contains(@class,'qsCard')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e088",
+      "number": 88,
+      "name": "بطاقة مبنى متاح غير مقفل (مثلاً للسكن g25 أو أي كلاس g...)",
+      "css": [
+        "#qs .qsRow button.qsCard.st-ok:has(img.g25)"
+      ],
+      "xpath": [
+        "//div[@id='qs']//button[contains(@class,'qsCard') and contains(@class,'st-ok') and .//img[contains(@class,'g25')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e089",
+      "number": 89,
+      "name": "بطاقة مبنى حسب الاسم الظاهر بداخلها (مثال: السكن أو الثكن أو القصر)",
+      "css": [
+        "#qs .qsRow button.qsCard"
+      ],
+      "xpath": [
+        "//div[@id='qs']//button[contains(@class,'qsCard') and .//b[contains(text(),'السكن')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e090",
+      "number": 90,
+      "name": "اسم المبنى المحدد حالياً في قسم التفاصيل",
+      "css": [
+        "#qs .qsInfo .qsInN"
+      ],
+      "xpath": [
+        "//div[@id='qs']//div[contains(@class,'qsInfo')]//*[contains(@class,'qsInN')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e091",
+      "number": 91,
+      "name": "زر \"تشييد المبنى\" النهائي",
+      "css": [
+        "#qs .qsBtns a.qsBtn.qsGo"
+      ],
+      "xpath": [
+        "//div[@id='qs']//div[contains(@class,'qsBtns')]//a[contains(@class,'qsBtn') and contains(@class,'qsGo')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e092",
+      "number": 92,
+      "name": "نص المستوى الكامل في العنوان (شاملاً +3 إن وُجدت)",
+      "css": [
+        "#build.gid25 h1.GreenWord .level"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e093",
+      "number": 93,
+      "name": "المستوى الإضافي قيد الانتظار (+3) داخل العنوان",
+      "css": [
+        "#build.gid25 h1.GreenWord .level span"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//h1//*[contains(@class,'level')]//span"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e094",
+      "number": 94,
+      "name": "رسالة الحاجة لتطوير المبنى للتوسع",
+      "css": [
+        "#build.gid25 div.c"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid25')]//div[contains(@class,'c')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e095",
+      "number": 95,
+      "name": "خلية اسم القرية المؤسسة/المحتلة في جدول التوسع (#expansion)",
+      "css": [
+        "#build.gid25 table#expansion tbody tr td.nam"
+      ],
+      "xpath": [
+        "//div[@id='build']//table[@id='expansion']//tbody//tr//td[contains(@class,'nam')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e096",
+      "number": 96,
+      "name": "خلية سكان القرية في جدول التوسع (#expansion)",
+      "css": [
+        "#build.gid25 table#expansion tbody tr td.zp"
+      ],
+      "xpath": [
+        "//div[@id='build']//table[@id='expansion']//tbody//tr//td[contains(@class,'zp')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e097",
+      "number": 97,
+      "name": "خلية تاريخ التأسيس/الاحتلال في جدول التوسع (#expansion)",
+      "css": [
+        "#build.gid25 table#expansion tbody tr td.res"
+      ],
+      "xpath": [
+        "//div[@id='build']//table[@id='expansion']//tbody//tr//td[contains(@class,'res')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e098",
+      "number": 98,
+      "name": "رسالة انشغال العمال داخل منطقة العقد (#contract)",
+      "css": [
+        "#build.gid25 #contract span.none"
+      ],
+      "xpath": [
+        "//div[@id='build']//p[@id='contract']//span[contains(@class,'none')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e099",
+      "number": 99,
+      "name": "جدول أوامر البناء الجارية في القرية",
+      "css": [
+        "#building_contract"
+      ],
+      "xpath": [
+        "//table[@id='building_contract']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e100",
+      "number": 100,
+      "name": "زر إتمام أوامر البناء فوراً بالذهب (2 ذهب)",
+      "css": [
+        "#building_contract a.qUp"
+      ],
+      "xpath": [
+        "//table[@id='building_contract']//a[contains(@class,'qUp')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e101",
+      "number": 101,
+      "name": "صفوف أوامر البناء الجارية داخل الجدول",
+      "css": [
+        "#building_contract tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='building_contract']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e102",
+      "number": 102,
+      "name": "زر إلغاء أمر بناء معين من الجدول",
+      "css": [
+        "#building_contract tbody tr td.ico a[href*='bk=del']"
+      ],
+      "xpath": [
+        "//table[@id='building_contract']//tbody//tr//td[contains(@class,'ico')]//a[contains(@href,'bk=del')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e103",
+      "number": 103,
+      "name": "عداد الوقت المتبقي داخل قائمة البناء أو العقد",
+      "css": [
+        "#building_contract #timer1 , #build.gid25 #contract #timer1"
+      ],
+      "xpath": [
+        "//table[@id='building_contract']//*[@id='timer1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e104",
+      "number": 104,
+      "name": "قائمة التبويبات العلوية في الإحصائيات (لاعبون، تحالفات، أبطال، العالم، الأعجوبة، أخبار، TØP، الجولات)",
+      "css": [
+        "#content.statistics #textmenu a"
+      ],
+      "xpath": [
+        "//div[contains(@class,'statistics')]//div[@id='textmenu']//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e105",
+      "number": 105,
+      "name": "تبويب \"تحالفات\" (t=1)",
+      "css": [
+        "#content.statistics #textmenu a[href='statistiken?t=1']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e106",
+      "number": 106,
+      "name": "تبويب \"أبطال\" (t=3)",
+      "css": [
+        "#content.statistics #textmenu a[href='statistiken?t=3']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=3']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e107",
+      "number": 107,
+      "name": "تبويب \"العالم\" (t=4)",
+      "css": [
+        "#content.statistics #textmenu a[href='statistiken?t=4']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=4']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e108",
+      "number": 108,
+      "name": "تبويب \"الأعجوبة\" (t=11)",
+      "css": [
+        "#content.statistics #textmenu a[href='statistiken?t=11']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e109",
+      "number": 109,
+      "name": "زر فتح قائمة فلترة القبائل (الكل / الرومان / الجرمان...)",
+      "css": [
+        "#stTb button.stTbBtn"
+      ],
+      "xpath": [
+        "//div[@id='stTb']//button[contains(@class,'stTbBtn')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e110",
+      "number": 110,
+      "name": "خيارات فلترة القبائل داخل القائمة المنسدلة (tb=1 الرومان، tb=2 الجرمان، tb=3 الإغريق...)",
+      "css": [
+        "#stTb .stTbPop a.stTbIt"
+      ],
+      "xpath": [
+        "//div[@id='stTb']//div[contains(@class,'stTbPop')]//a[contains(@class,'stTbIt')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e111",
+      "number": 111,
+      "name": "زر إحصائيات \"هجوم\" (t=7)",
+      "css": [
+        ".stCats a.stCt[href='statistiken?t=7']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'stCats')]//a[@href='statistiken?t=7']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e112",
+      "number": 112,
+      "name": "زر إحصائيات \"دفاع\" (t=6)",
+      "css": [
+        ".stCats a.stCt[href='statistiken?t=6']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'stCats')]//a[@href='statistiken?t=6']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e113",
+      "number": 113,
+      "name": "زر إحصائيات \"أفضل 10\" (t=5)",
+      "css": [
+        ".stCats a.stCt[href='statistiken?t=5']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'stCats')]//a[@href='statistiken?t=5']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e114",
+      "number": 114,
+      "name": "جدول اللاعبين في الإحصائيات",
+      "css": [
+        "table#player.row_table_data"
+      ],
+      "xpath": [
+        "//table[@id='player']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e115",
+      "number": 115,
+      "name": "صفوف اللاعبين داخل الجدول",
+      "css": [
+        "table#player tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e116",
+      "number": 116,
+      "name": "خلية الترتيب في صف اللاعب",
+      "css": [
+        "table#player tbody tr td.ra"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[contains(@class,'ra')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e117",
+      "number": 117,
+      "name": "خلية اسم اللاعب ورابط ملفه الشخصي (uid)",
+      "css": [
+        "table#player tbody tr td.pla a[href*='spieler']"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[contains(@class,'pla')]//a[contains(@href,'spieler')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e118",
+      "number": 118,
+      "name": "خلية التحالف في صف اللاعب",
+      "css": [
+        "table#player tbody tr td.al a"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[contains(@class,'al')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e119",
+      "number": 119,
+      "name": "خلية عدد السكان في صف اللاعب",
+      "css": [
+        "table#player tbody tr td.pop"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[contains(@class,'pop')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e120",
+      "number": 120,
+      "name": "خلية عدد القرى في صف اللاعب",
+      "css": [
+        "table#player tbody tr td.vil"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[contains(@class,'vil')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e121",
+      "number": 121,
+      "name": "زر مراسلة اللاعب مباشرة من الجدول",
+      "css": [
+        "table#player tbody tr td a[href^='msg?u=']"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td//a[starts-with(@href,'msg?u=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e122",
+      "number": 122,
+      "name": "جدول إحصائيات الأبطال",
+      "css": [
+        "table#heroes.row_table_data"
+      ],
+      "xpath": [
+        "//table[@id='heroes']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e123",
+      "number": 123,
+      "name": "صفوف الأبطال داخل الجدول",
+      "css": [
+        "table#heroes tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e124",
+      "number": 124,
+      "name": "صف البطل المميز / المظلل (مثل صف اللاعب الحالي)",
+      "css": [
+        "table#heroes tbody tr.hlight.marked"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr[contains(@class,'hlight') and contains(@class,'marked')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e125",
+      "number": 125,
+      "name": "ترتيب البطل في الصف",
+      "css": [
+        "table#heroes tbody tr td.ra"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'ra')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e126",
+      "number": 126,
+      "name": "اسم اللاعب ورابط ملفه (uid) في جدول الأبطال",
+      "css": [
+        "table#heroes tbody tr td.pla a[href*='spieler']"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'pla')]//a[contains(@href,'spieler')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e127",
+      "number": 127,
+      "name": "مستوى البطل في الصف",
+      "css": [
+        "table#heroes tbody tr td.xp:nth-child(3)"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][1]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e128",
+      "number": 128,
+      "name": "نقاط خبرة البطل (XP) الدقيقة في خاصية tda أو الظاهرة في kmg",
+      "css": [
+        "table#heroes tbody tr td.xp[tda]"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'xp') and @tda]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e129",
+      "number": 129,
+      "name": "مكافأة الهجوم للبطل (%)",
+      "css": [
+        "table#heroes tbody tr td.xp:nth-child(5)"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][3]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e130",
+      "number": 130,
+      "name": "مكافأة الدفاع للبطل (%)",
+      "css": [
+        "table#heroes tbody tr td.xp:nth-child(6)"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][4]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e131",
+      "number": 131,
+      "name": "نسبة صحة البطل أو حالة الوفاة (💀)",
+      "css": [
+        "table#heroes tbody tr td.xp:nth-child(7)"
+      ],
+      "xpath": [
+        "//table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][5]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e132",
+      "number": 132,
+      "name": "حقل البحث بالرتبة داخل #search_navi",
+      "css": [
+        "#search_navi input.text.ra[name='rank']"
+      ],
+      "xpath": [
+        "//table[@id='search_navi']//input[@name='rank']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e133",
+      "number": 133,
+      "name": "حقل البحث بالاسم داخل #search_navi",
+      "css": [
+        "#search_navi input.text.name[name='name']"
+      ],
+      "xpath": [
+        "//table[@id='search_navi']//input[@name='name']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e134",
+      "number": 134,
+      "name": "زر تنفيذ البحث (\"بحث\") داخل #search_navi",
+      "css": [
+        "#search_navi button#btn_ok"
+      ],
+      "xpath": [
+        "//table[@id='search_navi']//button[@id='btn_ok']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e135",
+      "number": 135,
+      "name": "روابط التنقل بين الصفحات في أسفل الجدول (أرقام الصفحات و « و »)",
+      "css": [
+        "#search_navi .navi a"
+      ],
+      "xpath": [
+        "//table[@id='search_navi']//div[contains(@class,'navi')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e136",
+      "number": 136,
+      "name": "تبويب \"اخبار\" (t=12) في الإحصائيات",
+      "css": [
+        "#content.statistics #textmenu a[href='statistiken?t=12']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=12']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e137",
+      "number": 137,
+      "name": "جدول الأخبار في صفحة الأخبار (t=12)",
+      "css": [
+        "table#player.row_table_data"
+      ],
+      "xpath": [
+        "//table[@id='player' and contains(@class,'row_table_data')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e138",
+      "number": 138,
+      "name": "صفوف الأخبار داخل جدول الأخبار",
+      "css": [
+        "table#player tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e139",
+      "number": 139,
+      "name": "خلية وصف الحدث في صف الأخبار",
+      "css": [
+        "table#player tbody tr td:nth-child(1)"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[1]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e140",
+      "number": 140,
+      "name": "خلية الوقت (\"منذ\") في صف الأخبار",
+      "css": [
+        "table#player tbody tr td:nth-child(2)"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[2]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e141",
+      "number": 141,
+      "name": "روابط اللاعبين/الواحات داخل وصف الحدث",
+      "css": [
+        "table#player tbody tr td:nth-child(1) a"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[1]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e142",
+      "number": 142,
+      "name": "رقم القتلى / القيمة المميزة داخل وصف الحدث",
+      "css": [
+        "table#player tbody tr td:nth-child(1) b"
+      ],
+      "xpath": [
+        "//table[@id='player']//tbody//tr//td[1]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e143",
+      "number": 143,
+      "name": "روابط التنقل بين صفحات الأخبار في تذييل الجدول",
+      "css": [
+        "table#player tfoot th.navi a"
+      ],
+      "xpath": [
+        "//table[@id='player']//tfoot//th[contains(@class,'navi')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e144",
+      "number": 144,
+      "name": "اسم اللاعب في رأس بطاقة الملف الشخصي",
+      "css": [
+        "table#profile thead th"
+      ],
+      "xpath": [
+        "//table[@id='profile']//thead//th"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e145",
+      "number": 145,
+      "name": "عناصر عتاد البطل المعروضة في الملف الشخصي",
+      "css": [
+        "table#profile .phItems .heroMiniItem"
+      ],
+      "xpath": [
+        "//table[@id='profile']//*[contains(@class,'heroMiniItem')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e146",
+      "number": 146,
+      "name": "صفوف التفاصيل (القبيلة، التحالف، القرى، الواحات، أيام اللعب)",
+      "css": [
+        "table#profile .phInfo .phRow:not(.phRow3)"
+      ],
+      "xpath": [
+        "//table[@id='profile']//*[contains(@class,'phInfo')]//*[contains(@class,'phRow') and not(contains(@class,'phRow3'))]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e147",
+      "number": 147,
+      "name": "صفوف الرتبة والمستوى (السكان، المهاجم، المدافع، مستوى البطل)",
+      "css": [
+        "table#profile .phInfo .phRow.phRow3"
+      ],
+      "xpath": [
+        "//table[@id='profile']//*[contains(@class,'phInfo')]//*[contains(@class,'phRow3')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e148",
+      "number": 148,
+      "name": "زر \"اكتب رسالة\" في ملف اللاعب",
+      "css": [
+        "table#profile .phActions a.phBtn[href^='msg?u=']"
+      ],
+      "xpath": [
+        "//table[@id='profile']//*[contains(@class,'phActions')]//a[starts-with(@href,'msg?u=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e149",
+      "number": 149,
+      "name": "زر \"حظر اللاعب / إلغاء حظر اللاعب\" في ملف اللاعب",
+      "css": [
+        "table#profile .phActions .phBtn.Bann"
+      ],
+      "xpath": [
+        "//table[@id='profile']//*[contains(@class,'phActions')]//*[contains(@class,'Bann')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e150",
+      "number": 150,
+      "name": "زر \"عرض التقارير\" في ملف اللاعب",
+      "css": [
+        "table#profile .phActions a.phBtn[href^='berichte?d=']"
+      ],
+      "xpath": [
+        "//table[@id='profile']//*[contains(@class,'phActions')]//a[starts-with(@href,'berichte?d=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e151",
+      "number": 151,
+      "name": "جدول قرى اللاعب في ملفه الشخصي",
+      "css": [
+        "table#villages"
+      ],
+      "xpath": [
+        "//table[@id='villages']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e152",
+      "number": 152,
+      "name": "صفوف القرى داخل جدول #villages",
+      "css": [
+        "table#villages tbody tr"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e153",
+      "number": 153,
+      "name": "خلية اسم القرية ورابطها في جدول #villages",
+      "css": [
+        "table#villages tbody tr td.nam"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr//td[contains(@class,'nam')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e154",
+      "number": 154,
+      "name": "زر إرسال الموارد لقرية معينة من جدول #villages",
+      "css": [
+        "table#villages tbody tr td.nam a[href*='bid=17'][href*='vid2=']"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr//td[contains(@class,'nam')]//a[contains(@href,'bid=17') and contains(@href,'vid2=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e155",
+      "number": 155,
+      "name": "زر إرسال القوات لقرية معينة من جدول #villages",
+      "css": [
+        "table#villages tbody tr td.nam a[href^='a2b?id=']"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr//td[contains(@class,'nam')]//a[starts-with(@href,'a2b?id=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e156",
+      "number": 156,
+      "name": "خلية عدد السكان في جدول #villages",
+      "css": [
+        "table#villages tbody tr td.aligned_coords"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr//td[contains(@class,'aligned_coords')]/preceding-sibling::td[1]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e157",
+      "number": 157,
+      "name": "خلية الإحداثيات ورابط الخريطة في جدول #villages",
+      "css": [
+        "table#villages tbody tr td.aligned_coords a[href^='karte?id=']"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr//td[contains(@class,'aligned_coords')]//a[starts-with(@href,'karte?id=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e158",
+      "number": 158,
+      "name": "خلية البُعد / المسافة ورابط الإرسال بإحداثيات X,Y في جدول #villages",
+      "css": [
+        "table#villages tbody tr td:last-child a[href*='X=']"
+      ],
+      "xpath": [
+        "//table[@id='villages']//tbody//tr//td[last()]//a[contains(@href,'X=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e159",
+      "number": 159,
+      "name": "رابط نسخ رابط ملف اللاعب (#CoC_0)",
+      "css": [
+        "#CoC_0"
+      ],
+      "xpath": [
+        "//*[@id='CoC_0']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e160",
+      "number": 160,
+      "name": "شارات مستويات الحقول في خريطة الموارد (rf1 إلى rf18)",
+      "css": [
+        "#village_map b.lv.rf1      (استبدل 1 برقم الحقل من 1 إلى 18)"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//b[contains(@class,'lv') and contains(@class,'rf1')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e161",
+      "number": 161,
+      "name": "حقول الموارد القابلة للترقية / غير المكتملة (lvU) في خريطة الموارد",
+      "css": [
+        "#village_map b.lv.lvU"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//b[contains(@class,'lv') and contains(@class,'lvU')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e162",
+      "number": 162,
+      "name": "زر التبديل للقرية السابقة من العنوان («)",
+      "css": [
+        "#content.village1 h1 a.switchVillage[style*='margin-left']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//h1//a[contains(@class,'switchVillage') and contains(@style,'margin-left')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e163",
+      "number": 163,
+      "name": "عنصر تعديل اسم القرية من العنوان (data-n)",
+      "css": [
+        "#content.village1 h1 .VnO span[data-n]"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//h1//span[@data-n]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e164",
+      "number": 164,
+      "name": "حاوية صفحة ترقية حقل القمح (gid4)",
+      "css": [
+        "#build.gid4"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e165",
+      "number": 165,
+      "name": "جدول الإنتاج الحالي والمتوقع في صفحة الحقل",
+      "css": [
+        "#build.gid4 table#build_value"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]//table[@id='build_value']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e166",
+      "number": 166,
+      "name": "زر الترقية العادي داخل العقد (#contract)",
+      "css": [
+        "#build.gid4 #contract a.build[href*='bk=up']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//a[contains(@class,'build') and contains(@href,'bk=up')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e167",
+      "number": 167,
+      "name": "زر الترقية الفورية بالذهب (الارتقاء فوراً إلى أقصى مستوى متاح max=1)",
+      "css": [
+        "#build.gid4 #contract a.build[href*='max=1']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//a[contains(@class,'build') and contains(@href,'max=1')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e168",
+      "number": 168,
+      "name": "أيقونة / رابط تاجر المبادلة (NPC) داخل عقد الترقية (#contract)",
+      "css": [
+        "#build.gid4 #contract a[href*='bid=17'][href*='t=3'] img.npc"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//a[contains(@href,'bid=17') and contains(@href,'t=3')]//img[contains(@class,'npc')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e169",
+      "number": 169,
+      "name": "المورد الناقص (المميز باللون البرتقالي داخل التكلفة)",
+      "css": [
+        "#build.gid4 #contract b[style*='orangered']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//b[contains(@style,'orangered')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e170",
+      "number": 170,
+      "name": "رسالة وعداد توفر الموارد (\"ستتوفر الموارد بعد ...\")",
+      "css": [
+        "#build.gid4 #contract span.none #timer1"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//span[contains(@class,'none')]//*[@id='timer1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e171",
+      "number": 171,
+      "name": "حاوية صفحة المباني في القرية (village2)",
+      "css": [
+        "#content.village2"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village2')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e172",
+      "number": 172,
+      "name": "شارة كون القرية عاصمة في عنوان صفحة المباني",
+      "css": [
+        "#content.village2 h1 span.Vn.none3 , #content.village2 h1 span.Vn[style*='color:gray']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village2')]//h1//span[contains(@class,'Vn') and contains(.,'عاصمة')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e173",
+      "number": 173,
+      "name": "مناطق النقر على المباني في خريطة map2 (buld19 إلى buld40)",
+      "css": [
+        "map#map2 area[class^='buld']"
+      ],
+      "xpath": [
+        "//map[@id='map2']//area[starts-with(@class,'buld')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e174",
+      "number": 174,
+      "name": "مناطق النقر على السور في خريطة map1 (buld40)",
+      "css": [
+        "map#map1 area.buld40"
+      ],
+      "xpath": [
+        "//map[@id='map1']//area[contains(@class,'buld40')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e175",
+      "number": 175,
+      "name": "شارات المستويات المكتملة للحد الأقصى (lvM) في خريطة المباني",
+      "css": [
+        "#village_map #levels b.lv.lvM"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//div[@id='levels']//b[contains(@class,'lv') and contains(@class,'lvM')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e176",
+      "number": 176,
+      "name": "الحجّار في خريطة المباني (g34)",
+      "css": [
+        "#village_map img.building.g34"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g34')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e177",
+      "number": 177,
+      "name": "المعصرة في خريطة المباني (g35)",
+      "css": [
+        "#village_map img.building.g35"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g35')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e178",
+      "number": 178,
+      "name": "الثكنة في خريطة المباني (g19)",
+      "css": [
+        "#village_map img.building.g19"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g19')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e179",
+      "number": 179,
+      "name": "الثكنة الكبيرة في خريطة المباني (g29)",
+      "css": [
+        "#village_map img.building.g29"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g29')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e180",
+      "number": 180,
+      "name": "الإسطبل الكبير في خريطة المباني (g30)",
+      "css": [
+        "#village_map img.building.g30"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g30')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e181",
+      "number": 181,
+      "name": "الإسطبل في خريطة المباني (g20)",
+      "css": [
+        "#village_map img.building.g20"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g20')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e182",
+      "number": 182,
+      "name": "المستشفى في خريطة المباني (g45)",
+      "css": [
+        "#village_map img.building.g45"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g45')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e183",
+      "number": 183,
+      "name": "قصر الواحات في خريطة المباني (g37)",
+      "css": [
+        "#village_map img.building.g37"
+      ],
+      "xpath": [
+        "//div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g37')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e184",
+      "number": 184,
+      "name": "حاوية صفحة المستشفى (gid45)",
+      "css": [
+        "#build.gid45"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e185",
+      "number": 185,
+      "name": "مستوى المستشفى الحالي من العنوان",
+      "css": [
+        "#build.gid45 h1.GreenWord .level"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e186",
+      "number": 186,
+      "name": "جميع بطاقات علاج الوحدات في المستشفى",
+      "css": [
+        "#build.gid45 .trainUnits .trainCard"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[contains(@class,'trainUnits')]//div[contains(@class,'trainCard')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e187",
+      "number": 187,
+      "name": "بطاقة علاج وحدة محددة حسب data-tid (مثال: 11 لمهاجم بهراوة، 13 لمقاتل بفأس، 14 لكشّاف)",
+      "css": [
+        "#build.gid45 .trainCard[data-tid='11']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[contains(@class,'trainCard') and @data-tid='11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e188",
+      "number": 188,
+      "name": "نص الوقت المتبقي على شريط تقدم العلاج الجاري داخل البطاقة",
+      "css": [
+        "#build.gid45 .trainCard[data-tid='11'] .trainBarText"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'trainBarText')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e189",
+      "number": 189,
+      "name": "عداد الجرحى المتوفرين للوحدة داخل البطاقة",
+      "css": [
+        "#build.gid45 .trainCard[data-tid='11'] .tit .furtherInfo:not(.inTrain)"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'tit')]//*[contains(@class,'furtherInfo') and not(contains(@class,'inTrain'))]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e190",
+      "number": 190,
+      "name": "عداد من يتعالج حالياً للوحدة (\"يتعالج: ...\")",
+      "css": [
+        "#build.gid45 .trainCard[data-tid='11'] .tit .furtherInfo.inTrain b"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'inTrain')]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e191",
+      "number": 191,
+      "name": "أيقونة / رابط تاجر المبادلة (NPC) داخل بطاقة العلاج",
+      "css": [
+        "#build.gid45 .trainCard[data-tid='11'] .showCosts a[href*='bid=17'][href*='t=3']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'showCosts')]//a[contains(@href,'bid=17') and contains(@href,'t=3')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e192",
+      "number": 192,
+      "name": "حقل إدخال كمية العلاج لوحدة محددة (مثال: #_tf11)",
+      "css": [
+        "#build.gid45 #_tf11"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//input[@id='_tf11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e193",
+      "number": 193,
+      "name": "رابط تحديد أقصى كمية متاحة للعلاج لوحدة محددة (data-set)",
+      "css": [
+        "#build.gid45 .trainCard[data-tid='11'] a[data-set^='_tf11:']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//a[starts-with(@data-set,'_tf11:')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e194",
+      "number": 194,
+      "name": "زر بدء العلاج (\"علاج\") لوحدة محددة",
+      "css": [
+        "#build.gid45 button.trainCardBtn[data-tid='11']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//button[contains(@class,'trainCardBtn') and @data-tid='11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e195",
+      "number": 195,
+      "name": "زر بدء العلاج المفعل فقط وغير المعطل لوحدة محددة",
+      "css": [
+        "#build.gid45 button.trainCardBtn[data-tid='11']:not([disabled])"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//button[contains(@class,'trainCardBtn') and @data-tid='11' and not(@disabled)]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e196",
+      "number": 196,
+      "name": "نسبة تكاليف ووقت الشفاء الحالية من جدول #build_value",
+      "css": [
+        "#build.gid45 table#build_value tr td b"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid45')]//table[@id='build_value']//tr//td//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e197",
+      "number": 197,
+      "name": "حاوية صفحة الإسطبل (gid20)",
+      "css": [
+        "#build.gid20"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e198",
+      "number": 198,
+      "name": "بطاقة تدريب فرسان محددة حسب data-tid (مثال: 15 لمدافع الجرمان، 16 لفارس الجرمان)",
+      "css": [
+        "#build.gid20 .trainCard[data-tid='15']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//div[contains(@class,'trainCard') and @data-tid='15']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e199",
+      "number": 199,
+      "name": "زر إضافة مورد من حقيبة البطل (+) داخل بطاقة التدريب",
+      "css": [
+        "#build.gid20 .trainCard[data-tid='15'] .showCosts span.useHeroBagRes.BagBtnOnIcon"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//div[@data-tid='15']//*[contains(@class,'showCosts')]//span[contains(@class,'useHeroBagRes')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e200",
+      "number": 200,
+      "name": "زر فتح قائمة \"تجنيد إجباري\" لوحدة محددة",
+      "css": [
+        "#build.gid20 .csWrap[data-tid='15'] .csTog"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//span[contains(@class,'csWrap') and @data-tid='15']//*[contains(@class,'csTog')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e201",
+      "number": 201,
+      "name": "حقل \"اترك قمح في القرية\" (csK) داخل التجنيد الإجباري لوحدة محددة",
+      "css": [
+        "#build.gid20 .csWrap[data-tid='15'] input[name='csK']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//input[@name='csK']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e202",
+      "number": 202,
+      "name": "مربع اختيار استخدام تاجر المبادلة (csX) داخل التجنيد الإجباري",
+      "css": [
+        "#build.gid20 .csWrap[data-tid='15'] input.csHid[name='csX']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//input[@name='csX']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e203",
+      "number": 203,
+      "name": "زر \"تشغيل\" التجنيد الإجباري لوحدة محددة",
+      "css": [
+        "#build.gid20 .csWrap[data-tid='15'] button.csGo"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//button[contains(@class,'csGo')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e204",
+      "number": 204,
+      "name": "زر \"إيقاف\" التجنيد الإجباري لوحدة محددة",
+      "css": [
+        "#build.gid20 .csWrap[data-tid='15'] button.csStop"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//button[contains(@class,'csStop')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e205",
+      "number": 205,
+      "name": "حقل إدخال كمية التدريب وحده للوحدة (مثال: #_tf15، #_tf16)",
+      "css": [
+        "#build.gid20 #_tf15"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//input[@id='_tf15']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e206",
+      "number": 206,
+      "name": "رابط الحد الأقصى للتدريب وزر التدريب داخل بطاقة الإسطبل",
+      "css": [
+        "#build.gid20 .trainCard[data-tid='15'] a[data-set^='_tf15:'] , #build.gid20 button.trainCardBtn[data-tid='15']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid20')]//div[@data-tid='15']//a[starts-with(@data-set,'_tf15:')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e207",
+      "number": 207,
+      "name": "حاوية صفحة الثكنة (gid19)",
+      "css": [
+        "#build.gid19"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e208",
+      "number": 208,
+      "name": "بطاقة تدريب مشاة محددة حسب data-tid (11 مهاجم بهراوة، 12 مدافع برمح، 13 مقاتل بفأس، 14 كشّاف)",
+      "css": [
+        "#build.gid19 .trainCard[data-tid='11']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//div[contains(@class,'trainCard') and @data-tid='11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e209",
+      "number": 209,
+      "name": "عداد الوحدات قيد التدريب حالياً (\"قيد التدريب: ...\") داخل البطاقة",
+      "css": [
+        "#build.gid19 .trainCard[data-tid='11'] .tit .furtherInfo.inTrain b"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//div[@data-tid='11']//*[contains(@class,'inTrain')]//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e210",
+      "number": 210,
+      "name": "نص الوقت المتبقي على شريط تقدم التدريب الجاري داخل البطاقة",
+      "css": [
+        "#build.gid19 .trainCard[data-tid='11'] .trainBarText"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//div[@data-tid='11']//*[contains(@class,'trainBarText')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e211",
+      "number": 211,
+      "name": "حقل إدخال كمية التدريب لوحدة مشاة محددة (مثال: #_tf11، #_tf12، #_tf13، #_tf14)",
+      "css": [
+        "#build.gid19 #_tf11"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//input[@id='_tf11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e212",
+      "number": 212,
+      "name": "رابط تحديد أقصى كمية متاحة للتدريب (data-set) لوحدة مشاة محددة",
+      "css": [
+        "#build.gid19 .trainCard[data-tid='11'] a[data-set^='_tf11:']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//div[@data-tid='11']//a[starts-with(@data-set,'_tf11:')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e213",
+      "number": 213,
+      "name": "زر \"تدريب\" لوحدة مشاة محددة",
+      "css": [
+        "#build.gid19 button.trainCardBtn[data-tid='11']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//button[contains(@class,'trainCardBtn') and @data-tid='11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e214",
+      "number": 214,
+      "name": "زر \"تدريب\" المفعل فقط وغير المعطل لوحدة مشاة محددة",
+      "css": [
+        "#build.gid19 button.trainCardBtn[data-tid='11']:not([disabled])"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//button[contains(@class,'trainCardBtn') and @data-tid='11' and not(@disabled)]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e215",
+      "number": 215,
+      "name": "زر فتح \"تجنيد إجباري\" لوحدة مشاة محددة في الثكنة",
+      "css": [
+        "#build.gid19 .csWrap[data-tid='11'] .csTog"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid19')]//span[contains(@class,'csWrap') and @data-tid='11']//*[contains(@class,'csTog')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e218",
+      "number": 218,
+      "name": "حاوية نافذة دليل اللعبة بالكامل",
+      "css": [
+        ".guide-popup"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e219",
+      "number": 219,
+      "name": "زر إغلاق نافذة دليل اللعبة (✕)",
+      "css": [
+        ".guide-popup #close-guide , .guide-popup button.guide-close"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//button[@id='close-guide']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e220",
+      "number": 220,
+      "name": "القائمة الجانبية في دليل اللعبة (القبائل، المباني، معلومات عامة)",
+      "css": [
+        ".guide-popup nav.guide-nav ul li a"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//nav[contains(@class,'guide-nav')]//ul//li//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e221",
+      "number": 221,
+      "name": "العنصر النشط حالياً في قائمة الدليل الجانبية",
+      "css": [
+        ".guide-popup nav.guide-nav ul li.active a"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//nav[contains(@class,'guide-nav')]//li[contains(@class,'active')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e222",
+      "number": 222,
+      "name": "حاوية محتوى الدليل التفصيلي",
+      "css": [
+        ".guide-popup .guide-content"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e223",
+      "number": 223,
+      "name": "زر الرجوع داخل تفاصيل الدليل (\"رجوع\")",
+      "css": [
+        ".guide-popup .guide-content a.qback.qarw"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]//a[contains(@class,'qback')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e224",
+      "number": 224,
+      "name": "نقاط المميزات داخل تفاصيل القبيلة/الموضوع",
+      "css": [
+        ".guide-popup .guide-features ul li"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//div[contains(@class,'guide-features')]//ul//li"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e225",
+      "number": 225,
+      "name": "جدول وحدات/جنود القبيلة داخل دليل اللعبة",
+      "css": [
+        ".guide-popup table.guide-table"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//table[contains(@class,'guide-table')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e226",
+      "number": 226,
+      "name": "صفوف الجنود داخل جدول الدليل",
+      "css": [
+        ".guide-popup table.guide-table tbody tr"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//table[contains(@class,'guide-table')]//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e227",
+      "number": 227,
+      "name": "حاوية دليل اللعبة في حالته النشطة (#guide-menu.active)",
+      "css": [
+        "#guide-menu.active .guide-popup"
+      ],
+      "xpath": [
+        "//div[@id='guide-menu' and contains(@class,'active')]//div[contains(@class,'guide-popup')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e228",
+      "number": 228,
+      "name": "شروط بناء المبنى داخل تفاصيل الدليل (\"الشروط:\")",
+      "css": [
+        ".guide-popup .guide-content p.guide-meta"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]//p[contains(@class,'guide-meta')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e229",
+      "number": 229,
+      "name": "صفوف جدول مستويات المبنى داخل دليل اللعبة",
+      "css": [
+        ".guide-popup .guide-content table.guide-table tbody tr"
+      ],
+      "xpath": [
+        "//div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]//table[contains(@class,'guide-table')]//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e230",
+      "number": 230,
+      "name": "صف قرية يحمل معرف القرية في خاصية data-v",
+      "css": [
+        "tr[data-v]"
+      ],
+      "xpath": [
+        "//tr[@data-v]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e231",
+      "number": 231,
+      "name": "مؤشر حالة القرية / النقطة الملونة داخل صف القرية (data-v)",
+      "css": [
+        "tr[data-v] td.dot a"
+      ],
+      "xpath": [
+        "//tr[@data-v]//td[contains(@class,'dot')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e232",
+      "number": 232,
+      "name": "رابط واسم القرية داخل صف القرية (data-v)",
+      "css": [
+        "tr[data-v] td.link a[href*='vid=']"
+      ],
+      "xpath": [
+        "//tr[@data-v]//td[contains(@class,'link')]//a[contains(@href,'vid=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e233",
+      "number": 233,
+      "name": "إحداثيات القرية داخل صف القرية (data-v)",
+      "css": [
+        "tr[data-v] td.aligned_coords"
+      ],
+      "xpath": [
+        "//tr[@data-v]//td[contains(@class,'aligned_coords')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e234",
+      "number": 234,
+      "name": "زر إرسال الموارد للقرية داخل صف القرية (data-v)",
+      "css": [
+        "tr[data-v] td a[href*='bid=17'][href*='vid2=']"
+      ],
+      "xpath": [
+        "//tr[@data-v]//td//a[contains(@href,'bid=17') and contains(@href,'vid2=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e235",
+      "number": 235,
+      "name": "زر إرسال القوات للقرية داخل صف القرية (data-v)",
+      "css": [
+        "tr[data-v] td a[href^='a2b?id=']"
+      ],
+      "xpath": [
+        "//tr[@data-v]//td//a[starts-with(@href,'a2b?id=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e236",
+      "number": 236,
+      "name": "شارة / عداد التنبيه أو الهجوم في آخر خلية من صف القرية (data-v)",
+      "css": [
+        "tr[data-v] td:last-child font"
+      ],
+      "xpath": [
+        "//tr[@data-v]//td[last()]//font"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e237",
+      "number": 237,
+      "name": "جدول التحركات في صفحة الحقول (#movements)",
+      "css": [
+        "#content.village1 #map_details table#movements"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//div[@id='map_details']//table[@id='movements']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e238",
+      "number": 238,
+      "name": "صفوف التحركات داخل جدول #movements",
+      "css": [
+        "#content.village1 table#movements tbody tr"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='movements']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e239",
+      "number": 239,
+      "name": "الهجمات القادمة داخل جدول التحركات (att1 / .a1)",
+      "css": [
+        "#content.village1 table#movements tbody tr:has(img.att1) , #content.village1 table#movements tbody tr .mov span.a1"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='movements']//tbody//tr[.//img[contains(@class,'att1')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e240",
+      "number": 240,
+      "name": "التعزيزات القادمة داخل جدول التحركات (def1 / .d1)",
+      "css": [
+        "#content.village1 table#movements tbody tr:has(img.def1) , #content.village1 table#movements tbody tr .mov span.d1"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='movements']//tbody//tr[.//img[contains(@class,'def1')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e241",
+      "number": 241,
+      "name": "قواتي المهاجمة داخل جدول التحركات (att2 / .a2)",
+      "css": [
+        "#content.village1 table#movements tbody tr:has(img.att2) , #content.village1 table#movements tbody tr .mov span.a2"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='movements']//tbody//tr[.//img[contains(@class,'att2')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e242",
+      "number": 242,
+      "name": "عداد الوقت المتبقي لكل حركة داخل جدول #movements",
+      "css": [
+        "#content.village1 table#movements tbody tr .dur_r #timer1"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='movements']//tbody//tr//*[contains(@class,'dur_r')]//*[@id='timer1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e243",
+      "number": 243,
+      "name": "جدول القوات الموجودة في القرية (#troops)",
+      "css": [
+        "#content.village1 #map_details table#troops"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//div[@id='map_details']//table[@id='troops']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e244",
+      "number": 244,
+      "name": "صفوف القوات داخل جدول #troops",
+      "css": [
+        "#content.village1 table#troops tbody tr"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='troops']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e245",
+      "number": 245,
+      "name": "عدد الوحدة في صف جدول #troops (يدعم النص المباشر أو بداخل b[speed])",
+      "css": [
+        "#content.village1 table#troops tbody tr td.num"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='troops']//tbody//tr//td[contains(@class,'num')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e246",
+      "number": 246,
+      "name": "اسم الوحدة في صف جدول #troops",
+      "css": [
+        "#content.village1 table#troops tbody tr td.un"
+      ],
+      "xpath": [
+        "//div[contains(@class,'village1')]//table[@id='troops']//tbody//tr//td[contains(@class,'un')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e247",
+      "number": 247,
+      "name": "حاوية إرسال الموارد في السوق (gid17 داخل a2bMdC.mkt)",
+      "css": [
+        ".a2bMdC.mkt #build.gid17"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//div[@id='build' and contains(@class,'gid17')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e248",
+      "number": 248,
+      "name": "حقول إدخال كمية الموارد الأربعة في السوق (#r1 خشب، #r2 طين، #r3 حديد، #r4 قمح)",
+      "css": [
+        ".a2bMdC.mkt #build.gid17 table#send_select input#r1      (استبدل الرقم 1–4 حسب المورد)"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='send_select']//input[@id='r1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e249",
+      "number": 249,
+      "name": "روابط الحد الأقصى للتاجر لكل مورد (#c1 إلى #c4)",
+      "css": [
+        ".a2bMdC.mkt #build.gid17 table#send_select td.max a#c1   (استبدل الرقم 1–4 حسب المورد)"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='send_select']//td[contains(@class,'max')]//a[@id='c1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e250",
+      "number": 250,
+      "name": "عداد التجار المستخدمين / المتاحين وشريط الحمولة في السوق",
+      "css": [
+        ".a2bMdC.mkt #build.gid17 table#target_select td.mer b#exits , .a2bMdC.mkt #build.gid17 #merBar"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='target_select']//b[@id='exits']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e251",
+      "number": 251,
+      "name": "حقل اسم القرية المستهدفة (الإكمال التلقائي #Auto) في السوق",
+      "css": [
+        ".a2bMdC.mkt #build.gid17 table#target_select input#Auto[name='vname']"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='target_select']//input[@id='Auto']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e252",
+      "number": 252,
+      "name": "حقول الإحداثيات (X و Y) للقرية المستهدفة في السوق",
+      "css": [
+        ".a2bMdC.mkt #build.gid17 table#target_select td.coo input[name='x'] , .a2bMdC.mkt #build.gid17 table#target_select td.coo input[name='y']"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='target_select']//td[contains(@class,'coo')]//input[@name='x']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e253",
+      "number": 253,
+      "name": "زر \"إرسال\" الموارد في نافذة السوق",
+      "css": [
+        ".a2bMdC.mkt #build.gid17 button#btn_ok[name='submit']"
+      ],
+      "xpath": [
+        "//*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//div[@id='build']//button[@id='btn_ok']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e254",
+      "number": 254,
+      "name": "حاوية القائمة الجانبية (#side_navi)",
+      "css": [
+        "#side_navi"
+      ],
+      "xpath": [
+        "//div[@id='side_navi']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e255",
+      "number": 255,
+      "name": "شريط السيرفر والوقت الحالي (#timer2) ومؤشر البينغ (.qPing) في القائمة الجانبية",
+      "css": [
+        "#side_navi .ServerChange , #side_navi #timer2 , #side_navi .qPing"
+      ],
+      "xpath": [
+        "//div[@id='side_navi']//div[contains(@class,'ServerChange')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e256",
+      "number": 256,
+      "name": "روابط القائمة الجانبية السريعة (الرئيسية، الدليل، العضوية، الخروج، الذهب، الدعم)",
+      "css": [
+        "#side_navi p.MoHi a"
+      ],
+      "xpath": [
+        "//div[@id='side_navi']//p[contains(@class,'MoHi')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e257",
+      "number": 257,
+      "name": "زر \"إضافة أختصار\" في القائمة الجانبية",
+      "css": [
+        "#side_navi a[href^='/?ALi=']"
+      ],
+      "xpath": [
+        "//div[@id='side_navi']//a[starts-with(@href,'/?ALi=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e258",
+      "number": 258,
+      "name": "تبويبات صفحة السوق الرئيسية (#textmenu داخل #build.gid17)",
+      "css": [
+        "#build.gid17 #textmenu a"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid17')]//div[@id='textmenu']//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e259",
+      "number": 259,
+      "name": "التبويب النشط في صفحة السوق الرئيسية",
+      "css": [
+        "#build.gid17 #textmenu a.selected"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid17')]//div[@id='textmenu']//a[contains(@class,'selected')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e260",
+      "number": 260,
+      "name": "قائمة القرى الجانبية (#vlist) وزر طي/إظهار القائمة (.vlTg) وعداد القرى (.vlN)",
+      "css": [
+        "#side_info table#vlist , #side_info table#vlist button.vlTg , #side_info table#vlist .vlN"
+      ],
+      "xpath": [
+        "//div[@id='side_info']//table[@id='vlist']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e261",
+      "number": 261,
+      "name": "حاوية نافذة إرسال القوات / التعزيز (#a2bMd و #a2bX)",
+      "css": [
+        "#a2bMd #a2bX"
+      ],
+      "xpath": [
+        "//div[@id='a2bMd']//div[@id='a2bX']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e262",
+      "number": 262,
+      "name": "زر إغلاق نافذة إرسال القوات (#a2bMd)",
+      "css": [
+        "#a2bMd button.a2bMdX"
+      ],
+      "xpath": [
+        "//div[@id='a2bMd']//button[contains(@class,'a2bMdX')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e263",
+      "number": 263,
+      "name": "أزرار التعبئة السريعة (\"الكل\" و\"آخر إرسالية\") وعداد وقت الوصول (#a2bEta)",
+      "css": [
+        "#a2bX .aFills .aFillAll , #a2bX .aFills .aFillLast , #a2bX #a2bEta"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//*[contains(@class,'aFills')]//*[contains(@class,'aFillAll')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e264",
+      "number": 264,
+      "name": "خيارات نوع التحرك (2 تعزيز، 3 هجوم كامل، 4 هجوم للنهب)",
+      "css": [
+        "#a2bX .aTypes input[name='c'][value='2']    (استبدل القيمة 2 أو 3 أو 4)"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//*[contains(@class,'aTypes')]//input[@name='c' and @value='2']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e265",
+      "number": 265,
+      "name": "موجات التحرك داخل نافذة الإرسال (#aWvs .aWave)",
+      "css": [
+        "#a2bX #aWvs .aWave"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//div[@id='aWvs']//div[contains(@class,'aWave')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e266",
+      "number": 266,
+      "name": "مفتاح إرسال البطل داخل الموجة (.aHeroSw)",
+      "css": [
+        "#a2bX .aWave .aRow.aHeroRow .aHeroSw"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//div[contains(@class,'aWave')]//*[contains(@class,'aHeroSw')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e267",
+      "number": 267,
+      "name": "حقول إدخال عدد القوات حسب رقم الوحدة data-tid (مثال: 11، 13، 14، 16)",
+      "css": [
+        "#a2bX .aWave input.aNum[data-tid='11']"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//div[contains(@class,'aWave')]//input[contains(@class,'aNum') and @data-tid='11']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e268",
+      "number": 268,
+      "name": "زر \"آخر إرسالية\" لوحدة محددة داخل الموجة (.aLast)",
+      "css": [
+        "#a2bX .aWave .aRow:has(input.aNum[data-tid='11']) .aLast"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//div[contains(@class,'aWave')]//*[contains(@class,'aRow')][.//input[@data-tid='11']]//*[contains(@class,'aLast')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e269",
+      "number": 269,
+      "name": "شريط إحصائيات التحرك المباشر (الهجوم، الدفاع، الحمولة، استهلاك القمح)",
+      "css": [
+        "#a2bX .aWave .aBar b.Att , #a2bX .aWave .aBar b.def1 , #a2bX .aWave .aBar b.carr , #a2bX .aWave .aBar b.crop"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//div[contains(@class,'aWave')]//*[contains(@class,'aBar')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e270",
+      "number": 270,
+      "name": "زر تنفيذ الإرسال في نافذة التحرك (#btn_ok)",
+      "css": [
+        "#a2bX .aGo button#btn_ok"
+      ],
+      "xpath": [
+        "//div[@id='a2bX']//button[@id='btn_ok']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e271",
+      "number": 271,
+      "name": "حاوية صفحة النهب السريع (farms / #content.a2b)",
+      "css": [
+        "#content.a2b:has(form[name='farm'])"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b') and .//form[@name='farm']]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e272",
+      "number": 272,
+      "name": "تبويبات النهب السريع (هجوم، إضافة القرى، البحث عن القرى)",
+      "css": [
+        "#content.a2b #textmenu a"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//div[@id='textmenu']//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e273",
+      "number": 273,
+      "name": "ملخص حالة القوات والحمولة وعدد المحدد في قائمة النهب السريع (.fkS)",
+      "css": [
+        "#content.a2b .fkS .fkR , #content.a2b .fkS .fkR z[n='RR5'] , #content.a2b .fkS .fkR z[n='RR6']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//*[contains(@class,'fkS')]//*[contains(@class,'fkR')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e274",
+      "number": 274,
+      "name": "زر \"الهجوم على المحدد\" (#fkGoS) وعداد المزارع المحددة (<z n='FS'>)",
+      "css": [
+        "#content.a2b button#fkGoS , #content.a2b button#fkGoS z[n='FS']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//button[@id='fkGoS']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e275",
+      "number": 275,
+      "name": "زر \"الهجوم على الكل\" (#fkGoA) في قائمة النهب السريع",
+      "css": [
+        "#content.a2b button#fkGoA"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//button[@id='fkGoA']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e276",
+      "number": 276,
+      "name": "مربع \"تحديد الكل\" (#CheckAll__) وخيارات الفرز (\"الأقرب أولاً\" / \"الغنيمة\")",
+      "css": [
+        "#content.a2b .fkC input#CheckAll__ , #content.a2b .fkC .mkSoM span[data-a]"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//*[contains(@class,'fkC')]//input[@id='CheckAll__']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e277",
+      "number": 277,
+      "name": "أزرار تعديل وحذف جميع المزارع في شريط الأدوات (.fkTools)",
+      "css": [
+        "#content.a2b .fkC .fkTools a.fEd , #content.a2b .fkC .fkTools a[href*='del=-1']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//*[contains(@class,'fkTools')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e278",
+      "number": 278,
+      "name": "جميع صفوف/بطاقات المزارع داخل قائمة النهب السريع (label.fkV)",
+      "css": [
+        "#content.a2b .fkG label.fkV"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//*[contains(@class,'fkG')]//label[contains(@class,'fkV')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e279",
+      "number": 279,
+      "name": "مربع تحديد مزرعة محددة حسب معرفها في القائمة (مثال: 5623214)",
+      "css": [
+        "#content.a2b .fkG label.fkV input.check[zval='5623214']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//*[contains(@class,'fkG')]//input[contains(@class,'check') and @zval='5623214']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e280",
+      "number": 280,
+      "name": "أزرار تعديل وحذف مزرعة محددة حسب معرفها (مثال: 5623214)",
+      "css": [
+        "#content.a2b .fkG label.fkV:has(input[zval='5623214']) .fkA a.fEd , #content.a2b .fkG label.fkV:has(input[zval='5623214']) .fkA a[href*='del=5623214']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2b')]//label[contains(@class,'fkV') and .//input[@zval='5623214']]//*[contains(@class,'fkA')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e281",
+      "number": 281,
+      "name": "حقل معرفات المزارع المخفي (VIds) ورقم صفحة القائمة (.fkPg)",
+      "css": [
+        "form[name='farm'] input[name='VIds'] , form[name='farm'] .fkS .fkPg b"
+      ],
+      "xpath": [
+        "//form[@name='farm']//input[@name='VIds']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e282",
+      "number": 282,
+      "name": "وقت السير (.fkTm) وكمية القوات المحددة (.fkTr) داخل بطاقة المزرعة (label.fkV)",
+      "css": [
+        "form[name='farm'] .fkG label.fkV .fkM .fkTm , form[name='farm'] .fkG label.fkV .fkM .fkTr"
+      ],
+      "xpath": [
+        "//form[@name='farm']//*[contains(@class,'fkG')]//label[contains(@class,'fkV')]//*[contains(@class,'fkM')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e283",
+      "number": 283,
+      "name": "أيقونة حالة آخر غنيمة (bounty_full / bounty_half) داخل بطاقة المزرعة",
+      "css": [
+        "label.fkV .fkM img.fkBt"
+      ],
+      "xpath": [
+        "//label[contains(@class,'fkV')]//*[contains(@class,'fkM')]//img[contains(@class,'fkBt')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e284",
+      "number": 284,
+      "name": "أيقونة الوحدة/العلامة بجانب اسم المزرعة داخل بطاقة المزرعة",
+      "css": [
+        "label.fkV .fkH a[href*='dorf3?id='] img.unit"
+      ],
+      "xpath": [
+        "//label[contains(@class,'fkV')]//*[contains(@class,'fkH')]//a[contains(@href,'dorf3?id=')]//img[contains(@class,'unit')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e285",
+      "number": 285,
+      "name": "نموذج إضافة قرية للنهب السريع (farms?t=2) وتكلفة الذهب",
+      "css": [
+        "form[action='farms?t=2'] , form[action='farms?t=2'] p.farmCost b"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=2']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e286",
+      "number": 286,
+      "name": "حقول إدخال أعداد القوات حسب رقم الوحدة داخل إضافة القرى (مثال: t[11]، t[12]، t[13]، t[15]، t[16])",
+      "css": [
+        "form[action='farms?t=2'] table#coords .option input[name='t[11]']"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=2']//table[@id='coords']//*[contains(@class,'option')]//input[@name='t[11]']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e287",
+      "number": 287,
+      "name": "عداد الوحدات المتوفرة بجانب كل حقل وحدة داخل إضافة القرى",
+      "css": [
+        "form[action='farms?t=2'] table#coords .option input[name='t[11]'] + b"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=2']//table[@id='coords']//*[contains(@class,'option')]//input[@name='t[11]']/following-sibling::b[1]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e288",
+      "number": 288,
+      "name": "حقلا الإحداثيات (X و Y) وزر \"اضافة\" (#btn_ok) في إضافة القرى",
+      "css": [
+        "form[action='farms?t=2'] table#coords input[name='x'] , form[action='farms?t=2'] table#coords input[name='y'] , form[action='farms?t=2'] button#btn_ok"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=2']//table[@id='coords']//input[@name='x']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e289",
+      "number": 289,
+      "name": "نموذج البحث عن القرى في النهب السريع (farms?t=1 / #cropfinder_form)",
+      "css": [
+        "form#cropfinder_form[action='farms?t=1']"
+      ],
+      "xpath": [
+        "//form[@id='cropfinder_form' and @action='farms?t=1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e290",
+      "number": 290,
+      "name": "حقلا إحداثيات مركز الانطلاق (#mcx و #mcy) في البحث عن القرى",
+      "css": [
+        "form#cropfinder_form input#mcx[name='x'] , form#cropfinder_form input#mcy[name='y']"
+      ],
+      "xpath": [
+        "//form[@id='cropfinder_form']//input[@id='mcx']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e291",
+      "number": 291,
+      "name": "خيارات نوع الهدف (0 قرى اللاعبين، 1 واحات، 2 معسكرات تتارية)",
+      "css": [
+        "form#cropfinder_form input[name='Ty'][value='0']    (استبدل القيمة 0 أو 1 أو 2)"
+      ],
+      "xpath": [
+        "//form[@id='cropfinder_form']//input[@name='Ty' and @value='0']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e292",
+      "number": 292,
+      "name": "حقل الحد الأدنى لعدد السكان (#lfPP) وحقل اسم اللاعب (#lfNa)",
+      "css": [
+        "form#cropfinder_form input#lfPP[name='PP'] , form#cropfinder_form input#lfNa[name='Na']"
+      ],
+      "xpath": [
+        "//form[@id='cropfinder_form']//input[@id='lfPP']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e293",
+      "number": 293,
+      "name": "فلاتر العواصم (Cp) والتحالف (iA) والتتار (iT) داخل البحث عن القرى",
+      "css": [
+        "form#cropfinder_form input[name='Cp'][value='1'] , form#cropfinder_form input[name='iA'][value='1'] , form#cropfinder_form input[name='iT'][value='1']"
+      ],
+      "xpath": [
+        "//form[@id='cropfinder_form']//input[@name='iA' and @value='1']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e294",
+      "number": 294,
+      "name": "زر تنفيذ \"البحث عن القرى\" (#btn_ok داخل .lfAct)",
+      "css": [
+        "form#cropfinder_form .lfAct button#btn_ok"
+      ],
+      "xpath": [
+        "//form[@id='cropfinder_form']//*[contains(@class,'lfAct')]//button[@id='btn_ok']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e295",
+      "number": 295,
+      "name": "جدول نتائج البحث عن القرى (#croplist) ومربع \"تحديد الكل\"",
+      "css": [
+        "form[action='farms?t=1'] table#croplist , form[action='farms?t=1'] table#croplist thead input#CheckAll__"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=1']//table[@id='croplist']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e296",
+      "number": 296,
+      "name": "صفوف نتائج القرى داخل جدول #croplist ومربع تحديد كل صف",
+      "css": [
+        "form[action='farms?t=1'] table#croplist tbody tr , form[action='farms?t=1'] table#croplist tbody tr input.check[name='list[]']"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=1']//table[@id='croplist']//tbody//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e297",
+      "number": 297,
+      "name": "بيانات القرية (الاسم/الإحداثيات، السكان، المالك، البُعد، التكلفة) داخل صف #croplist",
+      "css": [
+        "table#croplist tbody tr td.aligned_coords a , table#croplist tbody tr td.owned a , table#croplist tbody tr td:nth-child(3) , table#croplist tbody tr td:nth-child(5) , table#croplist tbody tr td:nth-child(6) b"
+      ],
+      "xpath": [
+        "//table[@id='croplist']//tbody//tr//td[contains(@class,'aligned_coords')]//a"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e298",
+      "number": 298,
+      "name": "زر تأكيد \"اضافة مزرعه\" للقرى المحددة في نتائج البحث (farms?t=1)",
+      "css": [
+        "form[action='farms?t=1'] p.btn button#btn_ok[name='submit']"
+      ],
+      "xpath": [
+        "//form[@action='farms?t=1']//p[contains(@class,'btn')]//button[@id='btn_ok' and @name='submit']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e299",
+      "number": 299,
+      "name": "روابط التصفية الفرعية في نقطة التجمع (في القرية، القادمة، الذاهبة، في قرى اخرى)",
+      "css": [
+        "#build.gid16 a[href^='build?id=39']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid16')]//a[starts-with(@href,'build?id=39')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e300",
+      "number": 300,
+      "name": "جدول تفاصيل القوات والتحركات في نقطة التجمع (table.troop_details)",
+      "css": [
+        "#build.gid16 table.troop_details"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid16')]//table[contains(@class,'troop_details')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e301",
+      "number": 301,
+      "name": "صفوف التحركات/القوات داخل جدول troop_details ورابط القرية المصدر",
+      "css": [
+        "#build.gid16 table.troop_details tbody:first-of-type tr , #build.gid16 table.troop_details tbody:first-of-type tr td:first-child a[href*='dorf3?id=']"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid16')]//table[contains(@class,'troop_details')]//tbody[1]//tr"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e302",
+      "number": 302,
+      "name": "عداد الوقت المتبقي (#timer1) وصف الإجمالي في جدول troop_details",
+      "css": [
+        "#build.gid16 table.troop_details tbody:first-of-type tr #timer1 , #build.gid16 table.troop_details tbody:last-of-type tr b"
+      ],
+      "xpath": [
+        "//div[@id='build' and contains(@class,'gid16')]//table[contains(@class,'troop_details')]//tbody[last()]//tr//b"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e303",
+      "number": 303,
+      "name": "رؤوس أعمدة الوحدات في جدول troop_details (حسب كلاس الوحدة u11–u20 و uhero)",
+      "css": [
+        "table.troop_details thead tr th img.unit"
+      ],
+      "xpath": [
+        "//table[contains(@class,'troop_details')]//thead//tr//th//img[contains(@class,'unit')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e304",
+      "number": 304,
+      "name": "الخلايا الصفرية (td.none) والخلايا غير الصفرية داخل صفوف troop_details",
+      "css": [
+        "table.troop_details tbody:first-of-type tr td.none , table.troop_details tbody:first-of-type tr td:not(.none)"
+      ],
+      "xpath": [
+        "//table[contains(@class,'troop_details')]//tbody[1]//tr//td[contains(@class,'none')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e307",
+      "number": 307,
+      "name": "صفوف الهجوم للنهب حسب التمييز اللوني (#ffeeee) في جدول troop_details",
+      "css": [
+        "table.troop_details tbody:first-of-type tr:has(td[style*='ffeeee'])"
+      ],
+      "xpath": [
+        "//table[contains(@class,'troop_details')]//tbody[1]//tr[td[contains(@style,'ffeeee')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e308",
+      "number": 308,
+      "name": "صفوف الهجوم الكامل حسب التمييز اللوني (#fbdddd) في جدول troop_details",
+      "css": [
+        "table.troop_details tbody:first-of-type tr:has(td[style*='fbdddd'])"
+      ],
+      "xpath": [
+        "//table[contains(@class,'troop_details')]//tbody[1]//tr[td[contains(@style,'fbdddd')]]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e309",
+      "number": 309,
+      "name": "حاوية تفاصيل الهدف/القرية في الخريطة (.a2bMdC.map .v3c)",
+      "css": [
+        ".a2bMdC.map .v3c"
+      ],
+      "xpath": [
+        "//div[contains(@class,'a2bMdC') and contains(@class,'map')]//div[contains(@class,'v3c')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e310",
+      "number": 310,
+      "name": "رأس النافذة: زر التوسيط (.v3Back)، المسافة (.v3Dist)، وزر نسخ الرابط (.v3Copy)",
+      "css": [
+        ".v3c h1 a.v3Back:not(.v3Copy) , .v3c h1 a.v3Dist , .v3c h1 a.v3Copy"
+      ],
+      "xpath": [
+        "//div[contains(@class,'v3c')]//h1//a[contains(@class,'v3Dist')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e311",
+      "number": 311,
+      "name": "صورة نمط الحقول (#detailed_map) وجدول معلومات القرية (#village_info) وجدول التقارير (#troop_info)",
+      "css": [
+        ".v3c img#detailed_map , .v3c table#village_info , .v3c table#troop_info"
+      ],
+      "xpath": [
+        "//div[contains(@class,'v3c')]//table[@id='village_info']"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e312",
+      "number": 312,
+      "name": "روابط الإجراءات في جدول الخيارات (#options: التقارير، إرسال قوات، تجسس، تجار، إضافة للنهب)",
+      "css": [
+        ".v3c table#options a[href^='berichte'] , .v3c table#options a[href^='a2b?id='] , .v3c table#options a[href^='a2b?s'] , .v3c table#options a[href*='bid=17'] , .v3c table#options a[href*='farms?t=2']"
+      ],
+      "xpath": [
+        "//div[contains(@class,'v3c')]//table[@id='options']//a[starts-with(@href,'a2b?id=')]"
+      ],
+      "notes": []
+    },
+    {
+      "id": "e313",
+      "number": 313,
+      "name": "عداد التحركات النشطة (.v3Cnt)، نافذة التحرك (.v3MovPop)، وزر إلغاء التحرك (.v3X)",
+      "css": [
+        ".v3c table#options .v3Cnt , .v3c table#options .v3MovPop , .v3c table#options .v3MovPop a.v3X"
+      ],
+      "xpath": [
+        "//div[contains(@class,'v3c')]//table[@id='options']//*[contains(@class,'v3MovPop')]//a[contains(@class,'v3X')]"
+      ],
+      "notes": []
+    }
+  ]
+}

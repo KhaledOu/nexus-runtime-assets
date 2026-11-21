@@ -1,0 +1,1229 @@
+1. حقول القرية (dorf1)
+   CSS:   #_n1
+   XPath: //a[@id='_n1']
+
+2. مباني القرية (dorf2)
+   CSS:   #n2
+   XPath: //a[@id='n2']
+
+3. خريطة (karte)
+   CSS:   #n3
+   XPath: //a[@id='n3']
+
+4. الإحصائيات (statistiken)
+   CSS:   #n4
+   XPath: //a[@id='n4']
+
+5. الرسائل (msg)
+   CSS:   #n5 a.reports
+   XPath: //div[@id='n5']//a[contains(@class,'reports')]
+
+6. التقارير (berichte)
+   CSS:   #n5 a.messages
+   XPath: //div[@id='n5']//a[contains(@class,'messages')]
+
+7. البطل (kahraman)
+   CSS:   #nh
+   XPath: //a[@id='nh']
+
+8. المزادات
+   CSS:   a.heroBtn[href*='t=5']
+   XPath: //a[contains(@href,'kahraman?t=5')]
+
+9. المغامرات
+   CSS:   a.heroBtn[href*='t=3']
+   XPath: //a[contains(@href,'kahraman?t=3')]
+
+10. الذهب / البلس
+    CSS:   a.Plus.Gold
+    XPath: //a[contains(@class,'Plus') and contains(@class,'Gold')]
+
+
+12. اسم القرية الحالي في العنوان
+    CSS:   #content h1 .Vn
+    XPath: //div[@id='content']//h1//span[contains(@class,'Vn')]
+
+13. زر التبديل للقرية التالية من العنوان
+    CSS:   #content h1 a.switchVillage
+    XPath: //div[@id='content']//h1//a[contains(@class,'switchVillage')]
+
+14. حقول الموارد في الخريطة (حسب رقم الحقل 1 إلى 18)
+    CSS:   #rx area.bulid1      (استبدل 1 برقم الحقل من 1 إلى 18)
+    XPath: //map[@id='rx']//area[@class='bulid1']
+
+15. أي حقل مورد حسب النوع أو المستوى (مثال: حقل قمح / مستوى أقل من 22)
+    CSS:   #rx area[title*='حقل القمح']
+    XPath: //map[@id='rx']//area[contains(@title,'حقل القمح')]
+
+16. مركز القرية من خريطة الحقول (ينقل إلى dorf2)
+    CSS:   #rx area[href='dorf2']
+    XPath: //map[@id='rx']//area[@href='dorf2']
+
+17. جدول التحركات
+    CSS:   #movements
+    XPath: //table[@id='movements']
+
+18. صفوف التحركات داخل الجدول
+    CSS:   #movements tbody tr
+    XPath: //table[@id='movements']//tbody//tr
+
+19. جدول الإنتاج
+    CSS:   #production
+    XPath: //table[@id='production']
+
+20. صفوف الإنتاج (الخشب، الطين، الحديد، القمح، الاستهلاك، الحضارة)
+    CSS:   #production tbody tr
+    XPath: //table[@id='production']//tbody//tr
+
+21. جدول القوات
+    CSS:   #troops
+    XPath: //table[@id='troops']
+
+22. صفوف القوات داخل الجدول
+    CSS:   #troops tbody tr
+    XPath: //table[@id='troops']//tbody//tr
+
+23. زر طي / إظهار قائمة القرى
+    CSS:   #vlist button.vlTg
+    XPath: //table[@id='vlist']//button[contains(@class,'vlTg')]
+
+24. عدد القرى الإجمالي في القائمة
+    CSS:   #vlist .vlN
+    XPath: //table[@id='vlist']//*[contains(@class,'vlN')]
+
+25. جدول قائمة القرى الجانبية
+    CSS:   #vlist
+    XPath: //table[@id='vlist']
+
+26. صفوف القرى في قائمة القرى
+    CSS:   #vlist tbody tr[data-v]
+    XPath: //table[@id='vlist']//tbody//tr[@data-v]
+
+27. رابط الدخول على قرية محددة في القائمة (أو :last-child لآخر قرية)
+    CSS:   #vlist tbody tr td.link a
+    XPath: //table[@id='vlist']//tbody//tr//td[contains(@class,'link')]//a
+
+28. إحداثيات كل قرية في قائمة القرى
+    CSS:   #vlist tbody tr td.aligned_coords
+    XPath: //table[@id='vlist']//tbody//tr//td[contains(@class,'aligned_coords')]
+
+29. أيقونة الهجوم السريع بجانب كل قرية في القائمة
+    CSS:   #vlist tbody tr td a[href^='a2b?id=']
+    XPath: //table[@id='vlist']//tbody//tr//td//a[starts-with(@href,'a2b?id=')]
+
+30. زر ركب قطع الخريطة واربح الذهب العائم
+    CSS:   #mpzB
+    XPath: //div[@id='mpzB']
+32. مواقع البناء الفارغة في خريطة المباني
+    CSS:   #village_map img.building.iso[alt='موقع البناء']
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'iso')]
+
+33. مبنى السكن / الثكن في خريطة المباني (g25)
+    CSS:   #village_map img.building.g25
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g25')]
+
+34. البلدية في خريطة المباني (g24)
+    CSS:   #village_map img.building.g24
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g24')]
+
+35. المبنى الرئيسي في خريطة المباني (g15)
+    CSS:   #village_map img.building.g15
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g15')]
+
+36. السوق في خريطة المباني (g17)
+    CSS:   #village_map img.building.g17
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g17')]
+
+37. المخزن في خريطة المباني (g10)
+    CSS:   #village_map img.building.g10
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g10')]
+
+38. الصومعة في خريطة المباني (g11)
+    CSS:   #village_map img.building.g11
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g11')]
+
+39. المطاحن في خريطة المباني (g8)
+    CSS:   #village_map img.building.g8
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g8')]
+
+40. المخابز في خريطة المباني (g9)
+    CSS:   #village_map img.building.g9
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g9')]
+
+41. الساحة في خريطة المباني (g14)
+    CSS:   #village_map img.building.g14
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g14')]
+
+42. المكتب التجاري في خريطة المباني (g28)
+    CSS:   #village_map img.building.g28
+    XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g28')]
+
+43. نقطة التجمع في خريطة المباني (g16)
+    CSS:   #village_map img.dx1.g16
+    XPath: //div[@id='village_map']//img[contains(@class,'g16')]
+
+44. مستوى مبنى معين من شارة المستوى (مثال للسكن d15)
+    CSS:   #village_map #levels b.d15.lv
+    XPath: //div[@id='village_map']//div[@id='levels']//b[contains(@class,'d15') and contains(@class,'lv')]
+
+45. قائمة المواقع الفارغة الموصى بها في data-emp
+    CSS:   #village_map[data-emp]
+    XPath: //div[@id='village_map' and @data-emp]
+    ملاحظة: يمكن قراءة أرقام المواقع عبر el.getAttribute('data-emp')
+
+46. شريط الموارد العلوي بالكامل
+    CSS:   #res
+    XPath: //div[@id='res']
+
+47. خانة مورد الخشب (الكمية الحالية داخل الـ b)
+    CSS:   #res tr.res td.res:nth-child(1) b
+    XPath: //div[@id='res']//tr[contains(@class,'res')]//td[1]//b
+
+48. خانة مورد الطين (الكمية الحالية داخل الـ b)
+    CSS:   #res tr.res td.res:nth-child(2) b
+    XPath: //div[@id='res']//tr[contains(@class,'res')]//td[2]//b
+
+49. خانة مورد الحديد (الكمية الحالية داخل الـ b)
+    CSS:   #res tr.res td.res:nth-child(3) b
+    XPath: //div[@id='res']//tr[contains(@class,'res')]//td[3]//b
+
+50. خانة مورد القمح (الكمية الحالية داخل الـ b)
+    CSS:   #res tr.res td.res:nth-child(4) b
+    XPath: //div[@id='res']//tr[contains(@class,'res')]//td[4]//b
+
+51. أيقونات الموارد داخل الشريط (r1 خشب، r2 طين، r3 حديد، r4 قمح)
+    CSS:   #res img.r1
+    XPath: //div[@id='res']//img[contains(@class,'r1')]
+
+52. حاوية مبنى البلدية
+    CSS:   #build.gid24
+    XPath: //div[@id='build' and contains(@class,'gid24')]
+
+53. مستوى البلدية الحالي من العنوان
+    CSS:   #build.gid24 h1.GreenWord .level
+    XPath: //div[@id='build' and contains(@class,'gid24')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]
+
+54. أزرار التبديل بين القرى داخل البلدية (السابق « / التالي »)
+    CSS:   #build.gid24 h1.GreenWord a.switchVillage
+    XPath: //div[@id='build' and contains(@class,'gid24')]//h1//a[contains(@class,'switchVillage')]
+
+55. نقاط الحضارة المنتجة حالياً في البلدية
+    CSS:   #build.gid24 b[speed]
+    XPath: //div[@id='build' and contains(@class,'gid24')]//b[@speed]
+
+56. جدول الحفلات داخل البلدية
+    CSS:   #build.gid24 table.build_details
+    XPath: //div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]
+
+57. صفوف الحفلات داخل الجدول (1 صغير، 2 كبير، 3 ضخم، 4 بكل القرى بالذهب)
+    CSS:   #build.gid24 table.build_details tbody tr
+    XPath: //div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr
+
+58. زر إحتفال صغير (a=1)
+    CSS:   #build.gid24 table.build_details tbody tr:nth-child(1) td.act a
+    XPath: //div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr[1]//td[contains(@class,'act')]//a
+
+59. زر إحتفال كبير (a=2)
+    CSS:   #build.gid24 table.build_details tbody tr:nth-child(2) td.act a
+    XPath: //div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr[2]//td[contains(@class,'act')]//a
+
+60. زر إحتفال ضخم (a=3)
+    CSS:   #build.gid24 table.build_details tbody tr:nth-child(3) td.act a
+    XPath: //div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//tbody//tr[3]//td[contains(@class,'act')]//a
+
+61. مربع اختيار "تكرار الاحتفالات بالذهب"
+    CSS:   #build.gid24 #autoCheckbox
+    XPath: //div[@id='build' and contains(@class,'gid24')]//input[@id='autoCheckbox']
+
+62. زر بدء "إحتفال بكل القرى" بالذهب
+    CSS:   #build.gid24 table.build_details a.build.Auto
+    XPath: //div[@id='build' and contains(@class,'gid24')]//table[contains(@class,'build_details')]//a[contains(@class,'build') and contains(@class,'Auto')]
+
+63. رسالة اكتمال ترقية المبنى ("المبنى حُدِّث بالكامل")
+    CSS:   #build.gid24 p.none
+    XPath: //div[@id='build' and contains(@class,'gid24')]//p[contains(@class,'none')]
+
+64. حاوية مبنى السكن / الثكن
+    CSS:   #build.gid25
+    XPath: //div[@id='build' and contains(@class,'gid25')]
+
+65. مستوى السكن / الثكن الحالي من العنوان
+    CSS:   #build.gid25 h1.GreenWord .level
+    XPath: //div[@id='build' and contains(@class,'gid25')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]
+
+66. أزرار التبديل بين القرى داخل السكن (السابق « / التالي »)
+    CSS:   #build.gid25 h1.GreenWord a.switchVillage
+    XPath: //div[@id='build' and contains(@class,'gid25')]//h1//a[contains(@class,'switchVillage')]
+
+67. تبويب "التدريب" داخل السكن
+    CSS:   #build.gid25 #textmenu a[href*='t='] , #build.gid25 #textmenu a:first-child
+    XPath: //div[@id='build' and contains(@class,'gid25')]//div[@id='textmenu']//a[contains(text(),'التدريب')]
+
+68. تبويب "الولاء" داخل السكن
+    CSS:   #build.gid25 #textmenu a[href*='t=1']
+    XPath: //div[@id='build' and contains(@class,'gid25')]//div[@id='textmenu']//a[contains(@href,'t=1')]
+
+69. رسالة جاهزية المستوطنين للتوسع ("لديك X ... يمكنك التوسع")
+    CSS:   #build.gid25 div.c img.unit.u20
+    XPath: //div[@id='build' and contains(@class,'gid25')]//div[contains(@class,'c') and contains(.,'يمكنك التوسع')]
+
+70. نقاط الحضارة المنتجة والمطلوبة للتوسع داخل السكن
+    CSS:   #build.gid25 p[style*='text-align:center'] b
+    XPath: //div[@id='build' and contains(@class,'gid25')]//p[contains(.,'للتوسع يتطلب منك')]//b
+
+71. جدول التوسع (القرى المؤسسة / المحتلة من السكن)
+    CSS:   #build.gid25 table#expansion
+    XPath: //div[@id='build' and contains(@class,'gid25')]//table[@id='expansion']
+
+72. صفوف جدول التوسع
+    CSS:   #build.gid25 table#expansion tbody tr
+    XPath: //div[@id='build' and contains(@class,'gid25')]//table[@id='expansion']//tbody//tr
+
+73. جدول سرعة رفع الولاء
+    CSS:   #build.gid25 table#build_value
+    XPath: //div[@id='build' and contains(@class,'gid25')]//table[@id='build_value']
+
+74. زر الارتقاء بمستوى السكن داخل العقد
+    CSS:   #build.gid25 #contract a.build[quick='1']
+    XPath: //div[@id='build' and contains(@class,'gid25')]//p[@id='contract']//a[contains(@class,'build')]
+
+75. بطاقة تدريب المستوطن (tid=20)
+    CSS:   #build.gid25 .trainCard[data-tid='20']
+    XPath: //div[@id='build']//div[contains(@class,'trainCard') and @data-tid='20']
+
+76. عدد المستوطنين المتوفرين حالياً في القرية
+    CSS:   #build.gid25 .trainCard[data-tid='20'] .furtherInfo b
+    XPath: //div[@id='build']//div[@data-tid='20']//*[contains(@class,'furtherInfo')]//b
+
+77. أيقونة تاجر المبادلة (NPC) لتدريب المستوطنين
+    CSS:   #build.gid25 .trainCard[data-tid='20'] img.npc
+    XPath: //div[@id='build']//div[@data-tid='20']//img[contains(@class,'npc')]
+
+78. حقل إدخال كمية المستوطنين المطلوب تدريبهم
+    CSS:   #build.gid25 #_tf20
+    XPath: //div[@id='build']//input[@id='_tf20']
+
+79. رابط تحديد أقصى عدد مستوطنين ممكن (مثل رابط الـ "3" بجانب / )
+    CSS:   #build.gid25 a[data-set^='_tf20:']
+    XPath: //div[@id='build']//a[starts-with(@data-set,'_tf20:')]
+
+80. زر بدء تدريب المستوطنين
+    CSS:   #build.gid25 button.trainCardBtn[data-tid='20']
+    XPath: //div[@id='build']//button[contains(@class,'trainCardBtn') and @data-tid='20']
+
+81. زر بدء تدريب المستوطنين (المفعل فقط وغير المعطل)
+    CSS:   #build.gid25 button.trainCardBtn[data-tid='20']:not([disabled])
+    XPath: //div[@id='build']//button[contains(@class,'trainCardBtn') and @data-tid='20' and not(@disabled)]
+
+82. نافذة البناء السريع الجديدة بالكامل
+    CSS:   #qs.qsNew
+    XPath: //div[@id='qs' and contains(@class,'qsNew')]
+
+83. زر إغلاق نافذة البناء السريع (×)
+    CSS:   #qs button.qsX
+    XPath: //div[@id='qs']//button[contains(@class,'qsX')]
+
+84. تبويب "البنية التحتية" (infra)
+    CSS:   #qs .qsTabs button.qsTab[data-tab='infra']
+    XPath: //div[@id='qs']//button[contains(@class,'qsTab') and @data-tab='infra']
+
+85. تبويب "العسكرية" (mil)
+    CSS:   #qs .qsTabs button.qsTab[data-tab='mil']
+    XPath: //div[@id='qs']//button[contains(@class,'qsTab') and @data-tab='mil']
+
+86. تبويب "الموارد" (eco)
+    CSS:   #qs .qsTabs button.qsTab[data-tab='eco']
+    XPath: //div[@id='qs']//button[contains(@class,'qsTab') and @data-tab='eco']
+
+87. جميع بطاقات المباني المتاحة في النافذة
+    CSS:   #qs .qsRow button.qsCard
+    XPath: //div[@id='qs']//div[contains(@class,'qsRow')]//button[contains(@class,'qsCard')]
+
+88. بطاقة مبنى متاح غير مقفل (مثلاً للسكن g25 أو أي كلاس g...)
+    CSS:   #qs .qsRow button.qsCard.st-ok:has(img.g25)
+    XPath: //div[@id='qs']//button[contains(@class,'qsCard') and contains(@class,'st-ok') and .//img[contains(@class,'g25')]]
+
+89. بطاقة مبنى حسب الاسم الظاهر بداخلها (مثال: السكن أو الثكن أو القصر)
+    CSS:   #qs .qsRow button.qsCard
+    XPath: //div[@id='qs']//button[contains(@class,'qsCard') and .//b[contains(text(),'السكن')]]
+
+90. اسم المبنى المحدد حالياً في قسم التفاصيل
+    CSS:   #qs .qsInfo .qsInN
+    XPath: //div[@id='qs']//div[contains(@class,'qsInfo')]//*[contains(@class,'qsInN')]
+
+91. زر "تشييد المبنى" النهائي
+    CSS:   #qs .qsBtns a.qsBtn.qsGo
+    XPath: //div[@id='qs']//div[contains(@class,'qsBtns')]//a[contains(@class,'qsBtn') and contains(@class,'qsGo')]
+
+92. نص المستوى الكامل في العنوان (شاملاً +3 إن وُجدت)
+    CSS:   #build.gid25 h1.GreenWord .level
+    XPath: //div[@id='build' and contains(@class,'gid25')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]
+
+93. المستوى الإضافي قيد الانتظار (+3) داخل العنوان
+    CSS:   #build.gid25 h1.GreenWord .level span
+    XPath: //div[@id='build' and contains(@class,'gid25')]//h1//*[contains(@class,'level')]//span
+
+94. رسالة الحاجة لتطوير المبنى للتوسع
+    CSS:   #build.gid25 div.c
+    XPath: //div[@id='build' and contains(@class,'gid25')]//div[contains(@class,'c')]
+
+95. خلية اسم القرية المؤسسة/المحتلة في جدول التوسع (#expansion)
+    CSS:   #build.gid25 table#expansion tbody tr td.nam
+    XPath: //div[@id='build']//table[@id='expansion']//tbody//tr//td[contains(@class,'nam')]
+
+96. خلية سكان القرية في جدول التوسع (#expansion)
+    CSS:   #build.gid25 table#expansion tbody tr td.zp
+    XPath: //div[@id='build']//table[@id='expansion']//tbody//tr//td[contains(@class,'zp')]
+
+97. خلية تاريخ التأسيس/الاحتلال في جدول التوسع (#expansion)
+    CSS:   #build.gid25 table#expansion tbody tr td.res
+    XPath: //div[@id='build']//table[@id='expansion']//tbody//tr//td[contains(@class,'res')]
+
+98. رسالة انشغال العمال داخل منطقة العقد (#contract)
+    CSS:   #build.gid25 #contract span.none
+    XPath: //div[@id='build']//p[@id='contract']//span[contains(@class,'none')]
+
+99. جدول أوامر البناء الجارية في القرية
+    CSS:   #building_contract
+    XPath: //table[@id='building_contract']
+
+100. زر إتمام أوامر البناء فوراً بالذهب (2 ذهب)
+     CSS:   #building_contract a.qUp
+     XPath: //table[@id='building_contract']//a[contains(@class,'qUp')]
+
+101. صفوف أوامر البناء الجارية داخل الجدول
+     CSS:   #building_contract tbody tr
+     XPath: //table[@id='building_contract']//tbody//tr
+
+102. زر إلغاء أمر بناء معين من الجدول
+     CSS:   #building_contract tbody tr td.ico a[href*='bk=del']
+     XPath: //table[@id='building_contract']//tbody//tr//td[contains(@class,'ico')]//a[contains(@href,'bk=del')]
+
+103. عداد الوقت المتبقي داخل قائمة البناء أو العقد
+     CSS:   #building_contract #timer1 , #build.gid25 #contract #timer1
+     XPath: //table[@id='building_contract']//*[@id='timer1']
+
+104. قائمة التبويبات العلوية في الإحصائيات (لاعبون، تحالفات، أبطال، العالم، الأعجوبة، أخبار، TØP، الجولات)
+     CSS:   #content.statistics #textmenu a
+     XPath: //div[contains(@class,'statistics')]//div[@id='textmenu']//a
+
+105. تبويب "تحالفات" (t=1)
+     CSS:   #content.statistics #textmenu a[href='statistiken?t=1']
+     XPath: //div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=1']
+
+106. تبويب "أبطال" (t=3)
+     CSS:   #content.statistics #textmenu a[href='statistiken?t=3']
+     XPath: //div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=3']
+
+107. تبويب "العالم" (t=4)
+     CSS:   #content.statistics #textmenu a[href='statistiken?t=4']
+     XPath: //div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=4']
+
+108. تبويب "الأعجوبة" (t=11)
+     CSS:   #content.statistics #textmenu a[href='statistiken?t=11']
+     XPath: //div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=11']
+
+109. زر فتح قائمة فلترة القبائل (الكل / الرومان / الجرمان...)
+     CSS:   #stTb button.stTbBtn
+     XPath: //div[@id='stTb']//button[contains(@class,'stTbBtn')]
+
+110. خيارات فلترة القبائل داخل القائمة المنسدلة (tb=1 الرومان، tb=2 الجرمان، tb=3 الإغريق...)
+     CSS:   #stTb .stTbPop a.stTbIt
+     XPath: //div[@id='stTb']//div[contains(@class,'stTbPop')]//a[contains(@class,'stTbIt')]
+
+111. زر إحصائيات "هجوم" (t=7)
+     CSS:   .stCats a.stCt[href='statistiken?t=7']
+     XPath: //div[contains(@class,'stCats')]//a[@href='statistiken?t=7']
+
+112. زر إحصائيات "دفاع" (t=6)
+     CSS:   .stCats a.stCt[href='statistiken?t=6']
+     XPath: //div[contains(@class,'stCats')]//a[@href='statistiken?t=6']
+
+113. زر إحصائيات "أفضل 10" (t=5)
+     CSS:   .stCats a.stCt[href='statistiken?t=5']
+     XPath: //div[contains(@class,'stCats')]//a[@href='statistiken?t=5']
+
+114. جدول اللاعبين في الإحصائيات
+     CSS:   table#player.row_table_data
+     XPath: //table[@id='player']
+
+115. صفوف اللاعبين داخل الجدول
+     CSS:   table#player tbody tr
+     XPath: //table[@id='player']//tbody//tr
+
+116. خلية الترتيب في صف اللاعب
+     CSS:   table#player tbody tr td.ra
+     XPath: //table[@id='player']//tbody//tr//td[contains(@class,'ra')]
+
+117. خلية اسم اللاعب ورابط ملفه الشخصي (uid)
+     CSS:   table#player tbody tr td.pla a[href*='spieler']
+     XPath: //table[@id='player']//tbody//tr//td[contains(@class,'pla')]//a[contains(@href,'spieler')]
+
+118. خلية التحالف في صف اللاعب
+     CSS:   table#player tbody tr td.al a
+     XPath: //table[@id='player']//tbody//tr//td[contains(@class,'al')]//a
+
+119. خلية عدد السكان في صف اللاعب
+     CSS:   table#player tbody tr td.pop
+     XPath: //table[@id='player']//tbody//tr//td[contains(@class,'pop')]
+
+120. خلية عدد القرى في صف اللاعب
+     CSS:   table#player tbody tr td.vil
+     XPath: //table[@id='player']//tbody//tr//td[contains(@class,'vil')]
+
+121. زر مراسلة اللاعب مباشرة من الجدول
+     CSS:   table#player tbody tr td a[href^='msg?u=']
+     XPath: //table[@id='player']//tbody//tr//td//a[starts-with(@href,'msg?u=')]
+
+122. جدول إحصائيات الأبطال
+     CSS:   table#heroes.row_table_data
+     XPath: //table[@id='heroes']
+
+123. صفوف الأبطال داخل الجدول
+     CSS:   table#heroes tbody tr
+     XPath: //table[@id='heroes']//tbody//tr
+
+124. صف البطل المميز / المظلل (مثل صف اللاعب الحالي)
+     CSS:   table#heroes tbody tr.hlight.marked
+     XPath: //table[@id='heroes']//tbody//tr[contains(@class,'hlight') and contains(@class,'marked')]
+
+125. ترتيب البطل في الصف
+     CSS:   table#heroes tbody tr td.ra
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'ra')]
+
+126. اسم اللاعب ورابط ملفه (uid) في جدول الأبطال
+     CSS:   table#heroes tbody tr td.pla a[href*='spieler']
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'pla')]//a[contains(@href,'spieler')]
+
+127. مستوى البطل في الصف
+     CSS:   table#heroes tbody tr td.xp:nth-child(3)
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][1]
+
+128. نقاط خبرة البطل (XP) الدقيقة في خاصية tda أو الظاهرة في kmg
+     CSS:   table#heroes tbody tr td.xp[tda]
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'xp') and @tda]
+
+129. مكافأة الهجوم للبطل (%)
+     CSS:   table#heroes tbody tr td.xp:nth-child(5)
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][3]
+
+130. مكافأة الدفاع للبطل (%)
+     CSS:   table#heroes tbody tr td.xp:nth-child(6)
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][4]
+
+131. نسبة صحة البطل أو حالة الوفاة (💀)
+     CSS:   table#heroes tbody tr td.xp:nth-child(7)
+     XPath: //table[@id='heroes']//tbody//tr//td[contains(@class,'xp')][5]
+
+132. حقل البحث بالرتبة داخل #search_navi
+     CSS:   #search_navi input.text.ra[name='rank']
+     XPath: //table[@id='search_navi']//input[@name='rank']
+
+133. حقل البحث بالاسم داخل #search_navi
+     CSS:   #search_navi input.text.name[name='name']
+     XPath: //table[@id='search_navi']//input[@name='name']
+
+134. زر تنفيذ البحث ("بحث") داخل #search_navi
+     CSS:   #search_navi button#btn_ok
+     XPath: //table[@id='search_navi']//button[@id='btn_ok']
+
+135. روابط التنقل بين الصفحات في أسفل الجدول (أرقام الصفحات و « و »)
+     CSS:   #search_navi .navi a
+     XPath: //table[@id='search_navi']//div[contains(@class,'navi')]//a
+     
+     136. تبويب "اخبار" (t=12) في الإحصائيات
+     CSS:   #content.statistics #textmenu a[href='statistiken?t=12']
+     XPath: //div[contains(@class,'statistics')]//div[@id='textmenu']//a[@href='statistiken?t=12']
+
+137. جدول الأخبار في صفحة الأخبار (t=12)
+     CSS:   table#player.row_table_data
+     XPath: //table[@id='player' and contains(@class,'row_table_data')]
+
+138. صفوف الأخبار داخل جدول الأخبار
+     CSS:   table#player tbody tr
+     XPath: //table[@id='player']//tbody//tr
+
+139. خلية وصف الحدث في صف الأخبار
+     CSS:   table#player tbody tr td:nth-child(1)
+     XPath: //table[@id='player']//tbody//tr//td[1]
+
+140. خلية الوقت ("منذ") في صف الأخبار
+     CSS:   table#player tbody tr td:nth-child(2)
+     XPath: //table[@id='player']//tbody//tr//td[2]
+
+141. روابط اللاعبين/الواحات داخل وصف الحدث
+     CSS:   table#player tbody tr td:nth-child(1) a
+     XPath: //table[@id='player']//tbody//tr//td[1]//a
+
+142. رقم القتلى / القيمة المميزة داخل وصف الحدث
+     CSS:   table#player tbody tr td:nth-child(1) b
+     XPath: //table[@id='player']//tbody//tr//td[1]//b
+
+143. روابط التنقل بين صفحات الأخبار في تذييل الجدول
+     CSS:   table#player tfoot th.navi a
+     XPath: //table[@id='player']//tfoot//th[contains(@class,'navi')]//a
+     
+     144. اسم اللاعب في رأس بطاقة الملف الشخصي
+     CSS:   table#profile thead th
+     XPath: //table[@id='profile']//thead//th
+
+145. عناصر عتاد البطل المعروضة في الملف الشخصي
+     CSS:   table#profile .phItems .heroMiniItem
+     XPath: //table[@id='profile']//*[contains(@class,'heroMiniItem')]
+
+146. صفوف التفاصيل (القبيلة، التحالف، القرى، الواحات، أيام اللعب)
+     CSS:   table#profile .phInfo .phRow:not(.phRow3)
+     XPath: //table[@id='profile']//*[contains(@class,'phInfo')]//*[contains(@class,'phRow') and not(contains(@class,'phRow3'))]
+
+147. صفوف الرتبة والمستوى (السكان، المهاجم، المدافع، مستوى البطل)
+     CSS:   table#profile .phInfo .phRow.phRow3
+     XPath: //table[@id='profile']//*[contains(@class,'phInfo')]//*[contains(@class,'phRow3')]
+
+148. زر "اكتب رسالة" في ملف اللاعب
+     CSS:   table#profile .phActions a.phBtn[href^='msg?u=']
+     XPath: //table[@id='profile']//*[contains(@class,'phActions')]//a[starts-with(@href,'msg?u=')]
+
+149. زر "حظر اللاعب / إلغاء حظر اللاعب" في ملف اللاعب
+     CSS:   table#profile .phActions .phBtn.Bann
+     XPath: //table[@id='profile']//*[contains(@class,'phActions')]//*[contains(@class,'Bann')]
+
+150. زر "عرض التقارير" في ملف اللاعب
+     CSS:   table#profile .phActions a.phBtn[href^='berichte?d=']
+     XPath: //table[@id='profile']//*[contains(@class,'phActions')]//a[starts-with(@href,'berichte?d=')]
+
+151. جدول قرى اللاعب في ملفه الشخصي
+     CSS:   table#villages
+     XPath: //table[@id='villages']
+
+152. صفوف القرى داخل جدول #villages
+     CSS:   table#villages tbody tr
+     XPath: //table[@id='villages']//tbody//tr
+
+153. خلية اسم القرية ورابطها في جدول #villages
+     CSS:   table#villages tbody tr td.nam
+     XPath: //table[@id='villages']//tbody//tr//td[contains(@class,'nam')]
+
+154. زر إرسال الموارد لقرية معينة من جدول #villages
+     CSS:   table#villages tbody tr td.nam a[href*='bid=17'][href*='vid2=']
+     XPath: //table[@id='villages']//tbody//tr//td[contains(@class,'nam')]//a[contains(@href,'bid=17') and contains(@href,'vid2=')]
+
+155. زر إرسال القوات لقرية معينة من جدول #villages
+     CSS:   table#villages tbody tr td.nam a[href^='a2b?id=']
+     XPath: //table[@id='villages']//tbody//tr//td[contains(@class,'nam')]//a[starts-with(@href,'a2b?id=')]
+
+156. خلية عدد السكان في جدول #villages
+     CSS:   table#villages tbody tr td.aligned_coords
+     XPath: //table[@id='villages']//tbody//tr//td[contains(@class,'aligned_coords')]/preceding-sibling::td[1]
+
+157. خلية الإحداثيات ورابط الخريطة في جدول #villages
+     CSS:   table#villages tbody tr td.aligned_coords a[href^='karte?id=']
+     XPath: //table[@id='villages']//tbody//tr//td[contains(@class,'aligned_coords')]//a[starts-with(@href,'karte?id=')]
+
+158. خلية البُعد / المسافة ورابط الإرسال بإحداثيات X,Y في جدول #villages
+     CSS:   table#villages tbody tr td:last-child a[href*='X=']
+     XPath: //table[@id='villages']//tbody//tr//td[last()]//a[contains(@href,'X=')]
+
+159. رابط نسخ رابط ملف اللاعب (#CoC_0)
+     CSS:   #CoC_0
+     XPath: //*[@id='CoC_0']
+     
+     160. شارات مستويات الحقول في خريطة الموارد (rf1 إلى rf18)
+     CSS:   #village_map b.lv.rf1      (استبدل 1 برقم الحقل من 1 إلى 18)
+     XPath: //div[@id='village_map']//b[contains(@class,'lv') and contains(@class,'rf1')]
+
+161. حقول الموارد القابلة للترقية / غير المكتملة (lvU) في خريطة الموارد
+     CSS:   #village_map b.lv.lvU
+     XPath: //div[@id='village_map']//b[contains(@class,'lv') and contains(@class,'lvU')]
+
+162. زر التبديل للقرية السابقة من العنوان («)
+     CSS:   #content.village1 h1 a.switchVillage[style*='margin-left']
+     XPath: //div[contains(@class,'village1')]//h1//a[contains(@class,'switchVillage') and contains(@style,'margin-left')]
+
+163. عنصر تعديل اسم القرية من العنوان (data-n)
+     CSS:   #content.village1 h1 .VnO span[data-n]
+     XPath: //div[contains(@class,'village1')]//h1//span[@data-n]
+     
+     164. حاوية صفحة ترقية حقل القمح (gid4)
+     CSS:   #build.gid4
+     XPath: //div[@id='build' and contains(@class,'gid4')]
+
+165. جدول الإنتاج الحالي والمتوقع في صفحة الحقل
+     CSS:   #build.gid4 table#build_value
+     XPath: //div[@id='build' and contains(@class,'gid4')]//table[@id='build_value']
+
+166. زر الترقية العادي داخل العقد (#contract)
+     CSS:   #build.gid4 #contract a.build[href*='bk=up']
+     XPath: //div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//a[contains(@class,'build') and contains(@href,'bk=up')]
+
+167. زر الترقية الفورية بالذهب (الارتقاء فوراً إلى أقصى مستوى متاح max=1)
+     CSS:   #build.gid4 #contract a.build[href*='max=1']
+     XPath: //div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//a[contains(@class,'build') and contains(@href,'max=1')]
+     
+     168. أيقونة / رابط تاجر المبادلة (NPC) داخل عقد الترقية (#contract)
+     CSS:   #build.gid4 #contract a[href*='bid=17'][href*='t=3'] img.npc
+     XPath: //div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//a[contains(@href,'bid=17') and contains(@href,'t=3')]//img[contains(@class,'npc')]
+
+169. المورد الناقص (المميز باللون البرتقالي داخل التكلفة)
+     CSS:   #build.gid4 #contract b[style*='orangered']
+     XPath: //div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//b[contains(@style,'orangered')]
+
+170. رسالة وعداد توفر الموارد ("ستتوفر الموارد بعد ...")
+     CSS:   #build.gid4 #contract span.none #timer1
+     XPath: //div[@id='build' and contains(@class,'gid4')]//p[@id='contract']//span[contains(@class,'none')]//*[@id='timer1']
+     
+     171. حاوية صفحة المباني في القرية (village2)
+     CSS:   #content.village2
+     XPath: //div[contains(@class,'village2')]
+
+172. شارة كون القرية عاصمة في عنوان صفحة المباني
+     CSS:   #content.village2 h1 span.Vn.none3 , #content.village2 h1 span.Vn[style*='color:gray']
+     XPath: //div[contains(@class,'village2')]//h1//span[contains(@class,'Vn') and contains(.,'عاصمة')]
+
+173. مناطق النقر على المباني في خريطة map2 (buld19 إلى buld40)
+     CSS:   map#map2 area[class^='buld']
+     XPath: //map[@id='map2']//area[starts-with(@class,'buld')]
+
+174. مناطق النقر على السور في خريطة map1 (buld40)
+     CSS:   map#map1 area.buld40
+     XPath: //map[@id='map1']//area[contains(@class,'buld40')]
+
+175. شارات المستويات المكتملة للحد الأقصى (lvM) في خريطة المباني
+     CSS:   #village_map #levels b.lv.lvM
+     XPath: //div[@id='village_map']//div[@id='levels']//b[contains(@class,'lv') and contains(@class,'lvM')]
+
+176. الحجّار في خريطة المباني (g34)
+     CSS:   #village_map img.building.g34
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g34')]
+
+177. المعصرة في خريطة المباني (g35)
+     CSS:   #village_map img.building.g35
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g35')]
+
+178. الثكنة في خريطة المباني (g19)
+     CSS:   #village_map img.building.g19
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g19')]
+
+179. الثكنة الكبيرة في خريطة المباني (g29)
+     CSS:   #village_map img.building.g29
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g29')]
+
+180. الإسطبل الكبير في خريطة المباني (g30)
+     CSS:   #village_map img.building.g30
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g30')]
+
+181. الإسطبل في خريطة المباني (g20)
+     CSS:   #village_map img.building.g20
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g20')]
+
+182. المستشفى في خريطة المباني (g45)
+     CSS:   #village_map img.building.g45
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g45')]
+
+183. قصر الواحات في خريطة المباني (g37)
+     CSS:   #village_map img.building.g37
+     XPath: //div[@id='village_map']//img[contains(@class,'building') and contains(@class,'g37')]
+     
+     184. حاوية صفحة المستشفى (gid45)
+     CSS:   #build.gid45
+     XPath: //div[@id='build' and contains(@class,'gid45')]
+
+185. مستوى المستشفى الحالي من العنوان
+     CSS:   #build.gid45 h1.GreenWord .level
+     XPath: //div[@id='build' and contains(@class,'gid45')]//h1[contains(@class,'GreenWord')]//*[contains(@class,'level')]
+
+186. جميع بطاقات علاج الوحدات في المستشفى
+     CSS:   #build.gid45 .trainUnits .trainCard
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[contains(@class,'trainUnits')]//div[contains(@class,'trainCard')]
+
+187. بطاقة علاج وحدة محددة حسب data-tid (مثال: 11 لمهاجم بهراوة، 13 لمقاتل بفأس، 14 لكشّاف)
+     CSS:   #build.gid45 .trainCard[data-tid='11']
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[contains(@class,'trainCard') and @data-tid='11']
+
+188. نص الوقت المتبقي على شريط تقدم العلاج الجاري داخل البطاقة
+     CSS:   #build.gid45 .trainCard[data-tid='11'] .trainBarText
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'trainBarText')]
+
+189. عداد الجرحى المتوفرين للوحدة داخل البطاقة
+     CSS:   #build.gid45 .trainCard[data-tid='11'] .tit .furtherInfo:not(.inTrain)
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'tit')]//*[contains(@class,'furtherInfo') and not(contains(@class,'inTrain'))]
+
+190. عداد من يتعالج حالياً للوحدة ("يتعالج: ...")
+     CSS:   #build.gid45 .trainCard[data-tid='11'] .tit .furtherInfo.inTrain b
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'inTrain')]//b
+
+191. أيقونة / رابط تاجر المبادلة (NPC) داخل بطاقة العلاج
+     CSS:   #build.gid45 .trainCard[data-tid='11'] .showCosts a[href*='bid=17'][href*='t=3']
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//*[contains(@class,'showCosts')]//a[contains(@href,'bid=17') and contains(@href,'t=3')]
+
+192. حقل إدخال كمية العلاج لوحدة محددة (مثال: #_tf11)
+     CSS:   #build.gid45 #_tf11
+     XPath: //div[@id='build' and contains(@class,'gid45')]//input[@id='_tf11']
+
+193. رابط تحديد أقصى كمية متاحة للعلاج لوحدة محددة (data-set)
+     CSS:   #build.gid45 .trainCard[data-tid='11'] a[data-set^='_tf11:']
+     XPath: //div[@id='build' and contains(@class,'gid45')]//div[@data-tid='11']//a[starts-with(@data-set,'_tf11:')]
+
+194. زر بدء العلاج ("علاج") لوحدة محددة
+     CSS:   #build.gid45 button.trainCardBtn[data-tid='11']
+     XPath: //div[@id='build' and contains(@class,'gid45')]//button[contains(@class,'trainCardBtn') and @data-tid='11']
+
+195. زر بدء العلاج المفعل فقط وغير المعطل لوحدة محددة
+     CSS:   #build.gid45 button.trainCardBtn[data-tid='11']:not([disabled])
+     XPath: //div[@id='build' and contains(@class,'gid45')]//button[contains(@class,'trainCardBtn') and @data-tid='11' and not(@disabled)]
+
+196. نسبة تكاليف ووقت الشفاء الحالية من جدول #build_value
+     CSS:   #build.gid45 table#build_value tr td b
+     XPath: //div[@id='build' and contains(@class,'gid45')]//table[@id='build_value']//tr//td//b
+     
+     197. حاوية صفحة الإسطبل (gid20)
+     CSS:   #build.gid20
+     XPath: //div[@id='build' and contains(@class,'gid20')]
+
+198. بطاقة تدريب فرسان محددة حسب data-tid (مثال: 15 لمدافع الجرمان، 16 لفارس الجرمان)
+     CSS:   #build.gid20 .trainCard[data-tid='15']
+     XPath: //div[@id='build' and contains(@class,'gid20')]//div[contains(@class,'trainCard') and @data-tid='15']
+
+199. زر إضافة مورد من حقيبة البطل (+) داخل بطاقة التدريب
+     CSS:   #build.gid20 .trainCard[data-tid='15'] .showCosts span.useHeroBagRes.BagBtnOnIcon
+     XPath: //div[@id='build' and contains(@class,'gid20')]//div[@data-tid='15']//*[contains(@class,'showCosts')]//span[contains(@class,'useHeroBagRes')]
+
+200. زر فتح قائمة "تجنيد إجباري" لوحدة محددة
+     CSS:   #build.gid20 .csWrap[data-tid='15'] .csTog
+     XPath: //div[@id='build' and contains(@class,'gid20')]//span[contains(@class,'csWrap') and @data-tid='15']//*[contains(@class,'csTog')]
+
+201. حقل "اترك قمح في القرية" (csK) داخل التجنيد الإجباري لوحدة محددة
+     CSS:   #build.gid20 .csWrap[data-tid='15'] input[name='csK']
+     XPath: //div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//input[@name='csK']
+
+202. مربع اختيار استخدام تاجر المبادلة (csX) داخل التجنيد الإجباري
+     CSS:   #build.gid20 .csWrap[data-tid='15'] input.csHid[name='csX']
+     XPath: //div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//input[@name='csX']
+
+203. زر "تشغيل" التجنيد الإجباري لوحدة محددة
+     CSS:   #build.gid20 .csWrap[data-tid='15'] button.csGo
+     XPath: //div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//button[contains(@class,'csGo')]
+
+204. زر "إيقاف" التجنيد الإجباري لوحدة محددة
+     CSS:   #build.gid20 .csWrap[data-tid='15'] button.csStop
+     XPath: //div[@id='build' and contains(@class,'gid20')]//span[@data-tid='15']//button[contains(@class,'csStop')]
+
+205. حقل إدخال كمية التدريب وحده للوحدة (مثال: #_tf15، #_tf16)
+     CSS:   #build.gid20 #_tf15
+     XPath: //div[@id='build' and contains(@class,'gid20')]//input[@id='_tf15']
+
+206. رابط الحد الأقصى للتدريب وزر التدريب داخل بطاقة الإسطبل
+     CSS:   #build.gid20 .trainCard[data-tid='15'] a[data-set^='_tf15:'] , #build.gid20 button.trainCardBtn[data-tid='15']
+     XPath: //div[@id='build' and contains(@class,'gid20')]//div[@data-tid='15']//a[starts-with(@data-set,'_tf15:')]
+     
+     207. حاوية صفحة الثكنة (gid19)
+     CSS:   #build.gid19
+     XPath: //div[@id='build' and contains(@class,'gid19')]
+
+208. بطاقة تدريب مشاة محددة حسب data-tid (11 مهاجم بهراوة، 12 مدافع برمح، 13 مقاتل بفأس، 14 كشّاف)
+     CSS:   #build.gid19 .trainCard[data-tid='11']
+     XPath: //div[@id='build' and contains(@class,'gid19')]//div[contains(@class,'trainCard') and @data-tid='11']
+
+209. عداد الوحدات قيد التدريب حالياً ("قيد التدريب: ...") داخل البطاقة
+     CSS:   #build.gid19 .trainCard[data-tid='11'] .tit .furtherInfo.inTrain b
+     XPath: //div[@id='build' and contains(@class,'gid19')]//div[@data-tid='11']//*[contains(@class,'inTrain')]//b
+
+210. نص الوقت المتبقي على شريط تقدم التدريب الجاري داخل البطاقة
+     CSS:   #build.gid19 .trainCard[data-tid='11'] .trainBarText
+     XPath: //div[@id='build' and contains(@class,'gid19')]//div[@data-tid='11']//*[contains(@class,'trainBarText')]
+
+211. حقل إدخال كمية التدريب لوحدة مشاة محددة (مثال: #_tf11، #_tf12، #_tf13، #_tf14)
+     CSS:   #build.gid19 #_tf11
+     XPath: //div[@id='build' and contains(@class,'gid19')]//input[@id='_tf11']
+
+212. رابط تحديد أقصى كمية متاحة للتدريب (data-set) لوحدة مشاة محددة
+     CSS:   #build.gid19 .trainCard[data-tid='11'] a[data-set^='_tf11:']
+     XPath: //div[@id='build' and contains(@class,'gid19')]//div[@data-tid='11']//a[starts-with(@data-set,'_tf11:')]
+
+213. زر "تدريب" لوحدة مشاة محددة
+     CSS:   #build.gid19 button.trainCardBtn[data-tid='11']
+     XPath: //div[@id='build' and contains(@class,'gid19')]//button[contains(@class,'trainCardBtn') and @data-tid='11']
+
+214. زر "تدريب" المفعل فقط وغير المعطل لوحدة مشاة محددة
+     CSS:   #build.gid19 button.trainCardBtn[data-tid='11']:not([disabled])
+     XPath: //div[@id='build' and contains(@class,'gid19')]//button[contains(@class,'trainCardBtn') and @data-tid='11' and not(@disabled)]
+
+215. زر فتح "تجنيد إجباري" لوحدة مشاة محددة في الثكنة
+     CSS:   #build.gid19 .csWrap[data-tid='11'] .csTog
+     XPath: //div[@id='build' and contains(@class,'gid19')]//span[contains(@class,'csWrap') and @data-tid='11']//*[contains(@class,'csTog')]
+     
+     
+     218. حاوية نافذة دليل اللعبة بالكامل
+     CSS:   .guide-popup
+     XPath: //div[contains(@class,'guide-popup')]
+
+219. زر إغلاق نافذة دليل اللعبة (✕)
+     CSS:   .guide-popup #close-guide , .guide-popup button.guide-close
+     XPath: //div[contains(@class,'guide-popup')]//button[@id='close-guide']
+
+220. القائمة الجانبية في دليل اللعبة (القبائل، المباني، معلومات عامة)
+     CSS:   .guide-popup nav.guide-nav ul li a
+     XPath: //div[contains(@class,'guide-popup')]//nav[contains(@class,'guide-nav')]//ul//li//a
+
+221. العنصر النشط حالياً في قائمة الدليل الجانبية
+     CSS:   .guide-popup nav.guide-nav ul li.active a
+     XPath: //div[contains(@class,'guide-popup')]//nav[contains(@class,'guide-nav')]//li[contains(@class,'active')]//a
+
+222. حاوية محتوى الدليل التفصيلي
+     CSS:   .guide-popup .guide-content
+     XPath: //div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]
+
+223. زر الرجوع داخل تفاصيل الدليل ("رجوع")
+     CSS:   .guide-popup .guide-content a.qback.qarw
+     XPath: //div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]//a[contains(@class,'qback')]
+
+224. نقاط المميزات داخل تفاصيل القبيلة/الموضوع
+     CSS:   .guide-popup .guide-features ul li
+     XPath: //div[contains(@class,'guide-popup')]//div[contains(@class,'guide-features')]//ul//li
+
+225. جدول وحدات/جنود القبيلة داخل دليل اللعبة
+     CSS:   .guide-popup table.guide-table
+     XPath: //div[contains(@class,'guide-popup')]//table[contains(@class,'guide-table')]
+
+226. صفوف الجنود داخل جدول الدليل
+     CSS:   .guide-popup table.guide-table tbody tr
+     XPath: //div[contains(@class,'guide-popup')]//table[contains(@class,'guide-table')]//tbody//tr
+     
+     227. حاوية دليل اللعبة في حالته النشطة (#guide-menu.active)
+     CSS:   #guide-menu.active .guide-popup
+     XPath: //div[@id='guide-menu' and contains(@class,'active')]//div[contains(@class,'guide-popup')]
+
+228. شروط بناء المبنى داخل تفاصيل الدليل ("الشروط:")
+     CSS:   .guide-popup .guide-content p.guide-meta
+     XPath: //div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]//p[contains(@class,'guide-meta')]
+
+229. صفوف جدول مستويات المبنى داخل دليل اللعبة
+     CSS:   .guide-popup .guide-content table.guide-table tbody tr
+     XPath: //div[contains(@class,'guide-popup')]//div[contains(@class,'guide-content')]//table[contains(@class,'guide-table')]//tbody//tr
+     
+     230. صف قرية يحمل معرف القرية في خاصية data-v
+     CSS:   tr[data-v]
+     XPath: //tr[@data-v]
+
+231. مؤشر حالة القرية / النقطة الملونة داخل صف القرية (data-v)
+     CSS:   tr[data-v] td.dot a
+     XPath: //tr[@data-v]//td[contains(@class,'dot')]//a
+
+232. رابط واسم القرية داخل صف القرية (data-v)
+     CSS:   tr[data-v] td.link a[href*='vid=']
+     XPath: //tr[@data-v]//td[contains(@class,'link')]//a[contains(@href,'vid=')]
+
+233. إحداثيات القرية داخل صف القرية (data-v)
+     CSS:   tr[data-v] td.aligned_coords
+     XPath: //tr[@data-v]//td[contains(@class,'aligned_coords')]
+
+234. زر إرسال الموارد للقرية داخل صف القرية (data-v)
+     CSS:   tr[data-v] td a[href*='bid=17'][href*='vid2=']
+     XPath: //tr[@data-v]//td//a[contains(@href,'bid=17') and contains(@href,'vid2=')]
+
+235. زر إرسال القوات للقرية داخل صف القرية (data-v)
+     CSS:   tr[data-v] td a[href^='a2b?id=']
+     XPath: //tr[@data-v]//td//a[starts-with(@href,'a2b?id=')]
+
+236. شارة / عداد التنبيه أو الهجوم في آخر خلية من صف القرية (data-v)
+     CSS:   tr[data-v] td:last-child font
+     XPath: //tr[@data-v]//td[last()]//font
+     237. جدول التحركات في صفحة الحقول (#movements)
+     CSS:   #content.village1 #map_details table#movements
+     XPath: //div[contains(@class,'village1')]//div[@id='map_details']//table[@id='movements']
+
+238. صفوف التحركات داخل جدول #movements
+     CSS:   #content.village1 table#movements tbody tr
+     XPath: //div[contains(@class,'village1')]//table[@id='movements']//tbody//tr
+
+239. الهجمات القادمة داخل جدول التحركات (att1 / .a1)
+     CSS:   #content.village1 table#movements tbody tr:has(img.att1) , #content.village1 table#movements tbody tr .mov span.a1
+     XPath: //div[contains(@class,'village1')]//table[@id='movements']//tbody//tr[.//img[contains(@class,'att1')]]
+
+240. التعزيزات القادمة داخل جدول التحركات (def1 / .d1)
+     CSS:   #content.village1 table#movements tbody tr:has(img.def1) , #content.village1 table#movements tbody tr .mov span.d1
+     XPath: //div[contains(@class,'village1')]//table[@id='movements']//tbody//tr[.//img[contains(@class,'def1')]]
+
+241. قواتي المهاجمة داخل جدول التحركات (att2 / .a2)
+     CSS:   #content.village1 table#movements tbody tr:has(img.att2) , #content.village1 table#movements tbody tr .mov span.a2
+     XPath: //div[contains(@class,'village1')]//table[@id='movements']//tbody//tr[.//img[contains(@class,'att2')]]
+
+242. عداد الوقت المتبقي لكل حركة داخل جدول #movements
+     CSS:   #content.village1 table#movements tbody tr .dur_r #timer1
+     XPath: //div[contains(@class,'village1')]//table[@id='movements']//tbody//tr//*[contains(@class,'dur_r')]//*[@id='timer1']
+
+243. جدول القوات الموجودة في القرية (#troops)
+     CSS:   #content.village1 #map_details table#troops
+     XPath: //div[contains(@class,'village1')]//div[@id='map_details']//table[@id='troops']
+
+244. صفوف القوات داخل جدول #troops
+     CSS:   #content.village1 table#troops tbody tr
+     XPath: //div[contains(@class,'village1')]//table[@id='troops']//tbody//tr
+
+245. عدد الوحدة في صف جدول #troops (يدعم النص المباشر أو بداخل b[speed])
+     CSS:   #content.village1 table#troops tbody tr td.num
+     XPath: //div[contains(@class,'village1')]//table[@id='troops']//tbody//tr//td[contains(@class,'num')]
+
+246. اسم الوحدة في صف جدول #troops
+     CSS:   #content.village1 table#troops tbody tr td.un
+     XPath: //div[contains(@class,'village1')]//table[@id='troops']//tbody//tr//td[contains(@class,'un')]
+     
+     247. حاوية إرسال الموارد في السوق (gid17 داخل a2bMdC.mkt)
+     CSS:   .a2bMdC.mkt #build.gid17
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//div[@id='build' and contains(@class,'gid17')]
+
+248. حقول إدخال كمية الموارد الأربعة في السوق (#r1 خشب، #r2 طين، #r3 حديد، #r4 قمح)
+     CSS:   .a2bMdC.mkt #build.gid17 table#send_select input#r1      (استبدل الرقم 1–4 حسب المورد)
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='send_select']//input[@id='r1']
+
+249. روابط الحد الأقصى للتاجر لكل مورد (#c1 إلى #c4)
+     CSS:   .a2bMdC.mkt #build.gid17 table#send_select td.max a#c1   (استبدل الرقم 1–4 حسب المورد)
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='send_select']//td[contains(@class,'max')]//a[@id='c1']
+
+250. عداد التجار المستخدمين / المتاحين وشريط الحمولة في السوق
+     CSS:   .a2bMdC.mkt #build.gid17 table#target_select td.mer b#exits , .a2bMdC.mkt #build.gid17 #merBar
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='target_select']//b[@id='exits']
+
+251. حقل اسم القرية المستهدفة (الإكمال التلقائي #Auto) في السوق
+     CSS:   .a2bMdC.mkt #build.gid17 table#target_select input#Auto[name='vname']
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='target_select']//input[@id='Auto']
+
+252. حقول الإحداثيات (X و Y) للقرية المستهدفة في السوق
+     CSS:   .a2bMdC.mkt #build.gid17 table#target_select td.coo input[name='x'] , .a2bMdC.mkt #build.gid17 table#target_select td.coo input[name='y']
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//table[@id='target_select']//td[contains(@class,'coo')]//input[@name='x']
+
+253. زر "إرسال" الموارد في نافذة السوق
+     CSS:   .a2bMdC.mkt #build.gid17 button#btn_ok[name='submit']
+     XPath: //*[contains(@class,'a2bMdC') and contains(@class,'mkt')]//div[@id='build']//button[@id='btn_ok']
+     
+     254. حاوية القائمة الجانبية (#side_navi)
+     CSS:   #side_navi
+     XPath: //div[@id='side_navi']
+
+255. شريط السيرفر والوقت الحالي (#timer2) ومؤشر البينغ (.qPing) في القائمة الجانبية
+     CSS:   #side_navi .ServerChange , #side_navi #timer2 , #side_navi .qPing
+     XPath: //div[@id='side_navi']//div[contains(@class,'ServerChange')]
+
+256. روابط القائمة الجانبية السريعة (الرئيسية، الدليل، العضوية، الخروج، الذهب، الدعم)
+     CSS:   #side_navi p.MoHi a
+     XPath: //div[@id='side_navi']//p[contains(@class,'MoHi')]//a
+
+257. زر "إضافة أختصار" في القائمة الجانبية
+     CSS:   #side_navi a[href^='/?ALi=']
+     XPath: //div[@id='side_navi']//a[starts-with(@href,'/?ALi=')]
+
+258. تبويبات صفحة السوق الرئيسية (#textmenu داخل #build.gid17)
+     CSS:   #build.gid17 #textmenu a
+     XPath: //div[@id='build' and contains(@class,'gid17')]//div[@id='textmenu']//a
+
+259. التبويب النشط في صفحة السوق الرئيسية
+     CSS:   #build.gid17 #textmenu a.selected
+     XPath: //div[@id='build' and contains(@class,'gid17')]//div[@id='textmenu']//a[contains(@class,'selected')]
+
+260. قائمة القرى الجانبية (#vlist) وزر طي/إظهار القائمة (.vlTg) وعداد القرى (.vlN)
+     CSS:   #side_info table#vlist , #side_info table#vlist button.vlTg , #side_info table#vlist .vlN
+     XPath: //div[@id='side_info']//table[@id='vlist']
+     
+     261. حاوية نافذة إرسال القوات / التعزيز (#a2bMd و #a2bX)
+     CSS:   #a2bMd #a2bX
+     XPath: //div[@id='a2bMd']//div[@id='a2bX']
+
+262. زر إغلاق نافذة إرسال القوات (#a2bMd)
+     CSS:   #a2bMd button.a2bMdX
+     XPath: //div[@id='a2bMd']//button[contains(@class,'a2bMdX')]
+
+263. أزرار التعبئة السريعة ("الكل" و"آخر إرسالية") وعداد وقت الوصول (#a2bEta)
+     CSS:   #a2bX .aFills .aFillAll , #a2bX .aFills .aFillLast , #a2bX #a2bEta
+     XPath: //div[@id='a2bX']//*[contains(@class,'aFills')]//*[contains(@class,'aFillAll')]
+
+264. خيارات نوع التحرك (2 تعزيز، 3 هجوم كامل، 4 هجوم للنهب)
+     CSS:   #a2bX .aTypes input[name='c'][value='2']    (استبدل القيمة 2 أو 3 أو 4)
+     XPath: //div[@id='a2bX']//*[contains(@class,'aTypes')]//input[@name='c' and @value='2']
+
+265. موجات التحرك داخل نافذة الإرسال (#aWvs .aWave)
+     CSS:   #a2bX #aWvs .aWave
+     XPath: //div[@id='a2bX']//div[@id='aWvs']//div[contains(@class,'aWave')]
+
+266. مفتاح إرسال البطل داخل الموجة (.aHeroSw)
+     CSS:   #a2bX .aWave .aRow.aHeroRow .aHeroSw
+     XPath: //div[@id='a2bX']//div[contains(@class,'aWave')]//*[contains(@class,'aHeroSw')]
+
+267. حقول إدخال عدد القوات حسب رقم الوحدة data-tid (مثال: 11، 13، 14، 16)
+     CSS:   #a2bX .aWave input.aNum[data-tid='11']
+     XPath: //div[@id='a2bX']//div[contains(@class,'aWave')]//input[contains(@class,'aNum') and @data-tid='11']
+
+268. زر "آخر إرسالية" لوحدة محددة داخل الموجة (.aLast)
+     CSS:   #a2bX .aWave .aRow:has(input.aNum[data-tid='11']) .aLast
+     XPath: //div[@id='a2bX']//div[contains(@class,'aWave')]//*[contains(@class,'aRow')][.//input[@data-tid='11']]//*[contains(@class,'aLast')]
+
+269. شريط إحصائيات التحرك المباشر (الهجوم، الدفاع، الحمولة، استهلاك القمح)
+     CSS:   #a2bX .aWave .aBar b.Att , #a2bX .aWave .aBar b.def1 , #a2bX .aWave .aBar b.carr , #a2bX .aWave .aBar b.crop
+     XPath: //div[@id='a2bX']//div[contains(@class,'aWave')]//*[contains(@class,'aBar')]
+
+270. زر تنفيذ الإرسال في نافذة التحرك (#btn_ok)
+     CSS:   #a2bX .aGo button#btn_ok
+     XPath: //div[@id='a2bX']//button[@id='btn_ok']
+     
+     271. حاوية صفحة النهب السريع (farms / #content.a2b)
+     CSS:   #content.a2b:has(form[name='farm'])
+     XPath: //div[contains(@class,'a2b') and .//form[@name='farm']]
+
+272. تبويبات النهب السريع (هجوم، إضافة القرى، البحث عن القرى)
+     CSS:   #content.a2b #textmenu a
+     XPath: //div[contains(@class,'a2b')]//div[@id='textmenu']//a
+
+273. ملخص حالة القوات والحمولة وعدد المحدد في قائمة النهب السريع (.fkS)
+     CSS:   #content.a2b .fkS .fkR , #content.a2b .fkS .fkR z[n='RR5'] , #content.a2b .fkS .fkR z[n='RR6']
+     XPath: //div[contains(@class,'a2b')]//*[contains(@class,'fkS')]//*[contains(@class,'fkR')]
+
+274. زر "الهجوم على المحدد" (#fkGoS) وعداد المزارع المحددة (<z n='FS'>)
+     CSS:   #content.a2b button#fkGoS , #content.a2b button#fkGoS z[n='FS']
+     XPath: //div[contains(@class,'a2b')]//button[@id='fkGoS']
+
+275. زر "الهجوم على الكل" (#fkGoA) في قائمة النهب السريع
+     CSS:   #content.a2b button#fkGoA
+     XPath: //div[contains(@class,'a2b')]//button[@id='fkGoA']
+
+276. مربع "تحديد الكل" (#CheckAll__) وخيارات الفرز ("الأقرب أولاً" / "الغنيمة")
+     CSS:   #content.a2b .fkC input#CheckAll__ , #content.a2b .fkC .mkSoM span[data-a]
+     XPath: //div[contains(@class,'a2b')]//*[contains(@class,'fkC')]//input[@id='CheckAll__']
+
+277. أزرار تعديل وحذف جميع المزارع في شريط الأدوات (.fkTools)
+     CSS:   #content.a2b .fkC .fkTools a.fEd , #content.a2b .fkC .fkTools a[href*='del=-1']
+     XPath: //div[contains(@class,'a2b')]//*[contains(@class,'fkTools')]//a
+
+278. جميع صفوف/بطاقات المزارع داخل قائمة النهب السريع (label.fkV)
+     CSS:   #content.a2b .fkG label.fkV
+     XPath: //div[contains(@class,'a2b')]//*[contains(@class,'fkG')]//label[contains(@class,'fkV')]
+
+279. مربع تحديد مزرعة محددة حسب معرفها في القائمة (مثال: 5623214)
+     CSS:   #content.a2b .fkG label.fkV input.check[zval='5623214']
+     XPath: //div[contains(@class,'a2b')]//*[contains(@class,'fkG')]//input[contains(@class,'check') and @zval='5623214']
+
+280. أزرار تعديل وحذف مزرعة محددة حسب معرفها (مثال: 5623214)
+     CSS:   #content.a2b .fkG label.fkV:has(input[zval='5623214']) .fkA a.fEd , #content.a2b .fkG label.fkV:has(input[zval='5623214']) .fkA a[href*='del=5623214']
+     XPath: //div[contains(@class,'a2b')]//label[contains(@class,'fkV') and .//input[@zval='5623214']]//*[contains(@class,'fkA')]//a
+     
+     281. حقل معرفات المزارع المخفي (VIds) ورقم صفحة القائمة (.fkPg)
+     CSS:   form[name='farm'] input[name='VIds'] , form[name='farm'] .fkS .fkPg b
+     XPath: //form[@name='farm']//input[@name='VIds']
+
+282. وقت السير (.fkTm) وكمية القوات المحددة (.fkTr) داخل بطاقة المزرعة (label.fkV)
+     CSS:   form[name='farm'] .fkG label.fkV .fkM .fkTm , form[name='farm'] .fkG label.fkV .fkM .fkTr
+     XPath: //form[@name='farm']//*[contains(@class,'fkG')]//label[contains(@class,'fkV')]//*[contains(@class,'fkM')]
+     283. أيقونة حالة آخر غنيمة (bounty_full / bounty_half) داخل بطاقة المزرعة
+     CSS:   label.fkV .fkM img.fkBt
+     XPath: //label[contains(@class,'fkV')]//*[contains(@class,'fkM')]//img[contains(@class,'fkBt')]
+
+284. أيقونة الوحدة/العلامة بجانب اسم المزرعة داخل بطاقة المزرعة
+     CSS:   label.fkV .fkH a[href*='dorf3?id='] img.unit
+     XPath: //label[contains(@class,'fkV')]//*[contains(@class,'fkH')]//a[contains(@href,'dorf3?id=')]//img[contains(@class,'unit')]
+     
+     285. نموذج إضافة قرية للنهب السريع (farms?t=2) وتكلفة الذهب
+     CSS:   form[action='farms?t=2'] , form[action='farms?t=2'] p.farmCost b
+     XPath: //form[@action='farms?t=2']
+
+286. حقول إدخال أعداد القوات حسب رقم الوحدة داخل إضافة القرى (مثال: t[11]، t[12]، t[13]، t[15]، t[16])
+     CSS:   form[action='farms?t=2'] table#coords .option input[name='t[11]']
+     XPath: //form[@action='farms?t=2']//table[@id='coords']//*[contains(@class,'option')]//input[@name='t[11]']
+
+287. عداد الوحدات المتوفرة بجانب كل حقل وحدة داخل إضافة القرى
+     CSS:   form[action='farms?t=2'] table#coords .option input[name='t[11]'] + b
+     XPath: //form[@action='farms?t=2']//table[@id='coords']//*[contains(@class,'option')]//input[@name='t[11]']/following-sibling::b[1]
+
+288. حقلا الإحداثيات (X و Y) وزر "اضافة" (#btn_ok) في إضافة القرى
+     CSS:   form[action='farms?t=2'] table#coords input[name='x'] , form[action='farms?t=2'] table#coords input[name='y'] , form[action='farms?t=2'] button#btn_ok
+     XPath: //form[@action='farms?t=2']//table[@id='coords']//input[@name='x']
+     
+     289. نموذج البحث عن القرى في النهب السريع (farms?t=1 / #cropfinder_form)
+     CSS:   form#cropfinder_form[action='farms?t=1']
+     XPath: //form[@id='cropfinder_form' and @action='farms?t=1']
+
+290. حقلا إحداثيات مركز الانطلاق (#mcx و #mcy) في البحث عن القرى
+     CSS:   form#cropfinder_form input#mcx[name='x'] , form#cropfinder_form input#mcy[name='y']
+     XPath: //form[@id='cropfinder_form']//input[@id='mcx']
+
+291. خيارات نوع الهدف (0 قرى اللاعبين، 1 واحات، 2 معسكرات تتارية)
+     CSS:   form#cropfinder_form input[name='Ty'][value='0']    (استبدل القيمة 0 أو 1 أو 2)
+     XPath: //form[@id='cropfinder_form']//input[@name='Ty' and @value='0']
+
+292. حقل الحد الأدنى لعدد السكان (#lfPP) وحقل اسم اللاعب (#lfNa)
+     CSS:   form#cropfinder_form input#lfPP[name='PP'] , form#cropfinder_form input#lfNa[name='Na']
+     XPath: //form[@id='cropfinder_form']//input[@id='lfPP']
+
+293. فلاتر العواصم (Cp) والتحالف (iA) والتتار (iT) داخل البحث عن القرى
+     CSS:   form#cropfinder_form input[name='Cp'][value='1'] , form#cropfinder_form input[name='iA'][value='1'] , form#cropfinder_form input[name='iT'][value='1']
+     XPath: //form[@id='cropfinder_form']//input[@name='iA' and @value='1']
+
+294. زر تنفيذ "البحث عن القرى" (#btn_ok داخل .lfAct)
+     CSS:   form#cropfinder_form .lfAct button#btn_ok
+     XPath: //form[@id='cropfinder_form']//*[contains(@class,'lfAct')]//button[@id='btn_ok']
+     
+     295. جدول نتائج البحث عن القرى (#croplist) ومربع "تحديد الكل"
+     CSS:   form[action='farms?t=1'] table#croplist , form[action='farms?t=1'] table#croplist thead input#CheckAll__
+     XPath: //form[@action='farms?t=1']//table[@id='croplist']
+
+296. صفوف نتائج القرى داخل جدول #croplist ومربع تحديد كل صف
+     CSS:   form[action='farms?t=1'] table#croplist tbody tr , form[action='farms?t=1'] table#croplist tbody tr input.check[name='list[]']
+     XPath: //form[@action='farms?t=1']//table[@id='croplist']//tbody//tr
+
+297. بيانات القرية (الاسم/الإحداثيات، السكان، المالك، البُعد، التكلفة) داخل صف #croplist
+     CSS:   table#croplist tbody tr td.aligned_coords a , table#croplist tbody tr td.owned a , table#croplist tbody tr td:nth-child(3) , table#croplist tbody tr td:nth-child(5) , table#croplist tbody tr td:nth-child(6) b
+     XPath: //table[@id='croplist']//tbody//tr//td[contains(@class,'aligned_coords')]//a
+     
+     298. زر تأكيد "اضافة مزرعه" للقرى المحددة في نتائج البحث (farms?t=1)
+     CSS:   form[action='farms?t=1'] p.btn button#btn_ok[name='submit']
+     XPath: //form[@action='farms?t=1']//p[contains(@class,'btn')]//button[@id='btn_ok' and @name='submit']
+     
+     299. روابط التصفية الفرعية في نقطة التجمع (في القرية، القادمة، الذاهبة، في قرى اخرى)
+     CSS:   #build.gid16 a[href^='build?id=39']
+     XPath: //div[@id='build' and contains(@class,'gid16')]//a[starts-with(@href,'build?id=39')]
+
+300. جدول تفاصيل القوات والتحركات في نقطة التجمع (table.troop_details)
+     CSS:   #build.gid16 table.troop_details
+     XPath: //div[@id='build' and contains(@class,'gid16')]//table[contains(@class,'troop_details')]
+
+301. صفوف التحركات/القوات داخل جدول troop_details ورابط القرية المصدر
+     CSS:   #build.gid16 table.troop_details tbody:first-of-type tr , #build.gid16 table.troop_details tbody:first-of-type tr td:first-child a[href*='dorf3?id=']
+     XPath: //div[@id='build' and contains(@class,'gid16')]//table[contains(@class,'troop_details')]//tbody[1]//tr
+
+302. عداد الوقت المتبقي (#timer1) وصف الإجمالي في جدول troop_details
+     CSS:   #build.gid16 table.troop_details tbody:first-of-type tr #timer1 , #build.gid16 table.troop_details tbody:last-of-type tr b
+     XPath: //div[@id='build' and contains(@class,'gid16')]//table[contains(@class,'troop_details')]//tbody[last()]//tr//b
+     303. رؤوس أعمدة الوحدات في جدول troop_details (حسب كلاس الوحدة u11–u20 و uhero)
+     CSS:   table.troop_details thead tr th img.unit
+     XPath: //table[contains(@class,'troop_details')]//thead//tr//th//img[contains(@class,'unit')]
+
+304. الخلايا الصفرية (td.none) والخلايا غير الصفرية داخل صفوف troop_details
+     CSS:   table.troop_details tbody:first-of-type tr td.none , table.troop_details tbody:first-of-type tr td:not(.none)
+     XPath: //table[contains(@class,'troop_details')]//tbody[1]//tr//td[contains(@class,'none')]
+     307. صفوف الهجوم للنهب حسب التمييز اللوني (#ffeeee) في جدول troop_details
+     CSS:   table.troop_details tbody:first-of-type tr:has(td[style*='ffeeee'])
+     XPath: //table[contains(@class,'troop_details')]//tbody[1]//tr[td[contains(@style,'ffeeee')]]
+
+308. صفوف الهجوم الكامل حسب التمييز اللوني (#fbdddd) في جدول troop_details
+     CSS:   table.troop_details tbody:first-of-type tr:has(td[style*='fbdddd'])
+     XPath: //table[contains(@class,'troop_details')]//tbody[1]//tr[td[contains(@style,'fbdddd')]]
+     
+     309. حاوية تفاصيل الهدف/القرية في الخريطة (.a2bMdC.map .v3c)
+     CSS:   .a2bMdC.map .v3c
+     XPath: //div[contains(@class,'a2bMdC') and contains(@class,'map')]//div[contains(@class,'v3c')]
+
+310. رأس النافذة: زر التوسيط (.v3Back)، المسافة (.v3Dist)، وزر نسخ الرابط (.v3Copy)
+     CSS:   .v3c h1 a.v3Back:not(.v3Copy) , .v3c h1 a.v3Dist , .v3c h1 a.v3Copy
+     XPath: //div[contains(@class,'v3c')]//h1//a[contains(@class,'v3Dist')]
+
+311. صورة نمط الحقول (#detailed_map) وجدول معلومات القرية (#village_info) وجدول التقارير (#troop_info)
+     CSS:   .v3c img#detailed_map , .v3c table#village_info , .v3c table#troop_info
+     XPath: //div[contains(@class,'v3c')]//table[@id='village_info']
+
+312. روابط الإجراءات في جدول الخيارات (#options: التقارير، إرسال قوات، تجسس، تجار، إضافة للنهب)
+     CSS:   .v3c table#options a[href^='berichte'] , .v3c table#options a[href^='a2b?id='] , .v3c table#options a[href^='a2b?s'] , .v3c table#options a[href*='bid=17'] , .v3c table#options a[href*='farms?t=2']
+     XPath: //div[contains(@class,'v3c')]//table[@id='options']//a[starts-with(@href,'a2b?id=')]
+
+313. عداد التحركات النشطة (.v3Cnt)، نافذة التحرك (.v3MovPop)، وزر إلغاء التحرك (.v3X)
+     CSS:   .v3c table#options .v3Cnt , .v3c table#options .v3MovPop , .v3c table#options .v3MovPop a.v3X
+     XPath: //div[contains(@class,'v3c')]//table[@id='options']//*[contains(@class,'v3MovPop')]//a[contains(@class,'v3X')]
+     
+     
+     
+     
